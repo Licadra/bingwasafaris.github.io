@@ -648,6 +648,21 @@
                                   cursor: pointer;
                                   margin: 5px;
                                 }
+                                .button2 {
+                                  display: inline-block;
+                                  border-radius: 4px;
+                                  background-color: transparent;
+                                  border: none;
+                                  color: #FFFFFF;
+                                  text-align: center;
+                                  font-size: 28px;
+                                  padding: auto;
+                                  width: auto;
+                                  height: 50px;
+                                  transition: all 0.5s;
+                                  cursor: pointer;
+                                  margin: 5px;
+                                }
                                 
                                 .button span {
                                   cursor: pointer;
@@ -788,22 +803,50 @@
 
                  <div style="float: left; margin: auto;width: 75px; height: 75px" class="qodef-logo-wrapper">
 
-<a style="font-size: xx-large;float: left;width: 75px; height: 75px" class="navbar-header navbar-brand" style="margin:auto; display: inline; background-color: transparent" href="index.html">        
+<a id="logo" style="font-size: xx-large;float: left;width: 75px; height: 75px" class="navbar-header navbar-brand" style="margin:auto; display: inline; background-color: transparent" href="index.html">        
 
 <img itemprop="image" class="qodef-normal-logo" src="uploads\2019\10\IMG-20191104-WA0007.jpg" width="100%" height="100%" alt="logo">
 
 
-</a>                                                
+</a> 
+<script>        
+   
+        $(document).ready(function () {                                                               
+           
+
+            $("#logo").click(function () {
+                                                                                                      
+               
+                $("#OtherActivities").hide();
+                
+            });
+        });
+
+</script>                                               
 
                  </div> 
 
                  <div style="float: left; margin: auto;width: 100px; height: 50px" class="qodef-logo-wrapper">
 
-<a style="font-size: xx-large;float: right;padding-top: 10px;width: 100px; height: 50px " class="navbar-header " style="margin:auto; display: inline; background-color: transparent" href="index.html">        
+<a id="name" style="font-size: xx-large;float: right;padding-top: 10px;width: 100px; height: 50px " class="navbar-header " style="margin:auto; display: inline; background-color: transparent" href="index.html">        
 
 Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
 </a>
+<script>        
+   
+        $(document).ready(function () {                                                               
+           
+
+            $("#name").click(function () {
+                                                                                                      
+               
+                $("#OtherActivities").hide();
+                
+            });
+        });
+
+</script>
           
                  </div>
 
@@ -833,25 +876,64 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                 
                  <ul class=" nav-ul-hide nav-ul-show"  style="margin:auto;color: #222222; float: right; height: auto;width: auto; background-color: transparent">
 <li class="li nav-ul-li nav-ul-li-bl dropdown">
-        <a class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="index.html">
+        <a id="home" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="index.html">
          Home
              
         </a>
+        <script>        
+   
+                $(document).ready(function () {                                                               
+                   
+        
+                    $("#home").click(function () {
+                                                                                                              
+                       
+                        $("#OtherActivities").hide();
+                                                                                       
+                        $("#divAgency").hide();
+                        $("#divAgency1").hide();
+                        $("#divAgency2").hide();
+                        $("#divAgency3").hide();
+                        $("#divAgency4").hide();
+                        
+                    });
+                });
+        
+        </script>
 </li>
      
 
 
 <li class="li nav-ul-li nav-ul-li-bl dropdown">
-    <a style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="#">
+    <a id="traditionalsafaris" style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="#">
         Traditional Safaris 
     </a>
+    <script>        
+   
+            $(document).ready(function () {                                                               
+               
+    
+                $("#traditionalsafaris").click(function () {
+                                                                                                          
+                   
+                    $("#OtherActivities").hide();
+                    $("#divAgency").hide();
+                        $("#divAgency1").hide();
+                        $("#divAgency2").hide();
+                        $("#divAgency3").hide();
+                        $("#divAgency4").hide();
+                    
+                });
+            });
+    
+    </script>
 
 
 
 
     <div class="dropdown-content dropdown-menu " style="padding-top: 0px; background-color: darkslategray">
 
-        <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
+        <a id="parksafari" href="index.html#divAgency" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
        
                   3 days / 2 nights Meru National Park safari
         </a>
@@ -862,12 +944,12 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
         <div class="dropdown-submenu " id="OtherActivities" style="display:none;" >
                    <ul  id="" class="dropdown-content dropdown-menu " style="padding-top: 0px; background-color: darkslategray">
                        <li class="li nav-ul-li nav-ul-li-bl">
-                           <a href="#">
+                           <a href="index.html#naturewalk3">
                                Nature walks
                            </a>
                        </li>
                        <li class="li nav-ul-li nav-ul-li-bl">
-                           <a href="#">
+                           <a href="index.html#naturewalk1">
                                Excursion
                            </a>
                        </li>
@@ -884,6 +966,24 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                         });
                     });
             
+        </script>
+         <script>        
+   
+                $(document).ready(function () {                                                               
+                   
+        
+                    $("#parksafari").click(function () {
+                                                                                                              
+                        $("#divAgency").show();
+                        $("#divAgency1").hide();
+                        $("#divAgency2").hide();
+                        $("#divAgency3").hide();
+                        $("#divAgency4").hide();
+                        $("#OtherActivities").hide();
+                        
+                    });
+                });
+        
         </script>
 
     </div>
@@ -904,10 +1004,29 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
 
 <li class="li nav-ul-li nav-ul-li-bl dropdown">
-<a style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="#">
+<a id="daytours" style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="#">
    Day Tours
      
 </a>
+<script>        
+   
+        $(document).ready(function () {                                                               
+           
+
+            $("#daytours").click(function () {
+                                                                                                      
+               
+                $("#OtherActivities").hide();
+                $("#divAgency").hide();
+                        $("#divAgency1").hide();
+                        $("#divAgency2").hide();
+                        $("#divAgency3").hide();
+                        $("#divAgency4").hide();
+                
+            });
+        });
+
+</script>
 
 
 <div class="dropdown-content dropdown-menu " style="padding-top: 0px; background-color: darkslategray">
@@ -930,25 +1049,82 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 </li>
 
 <li class="li nav-ul-li nav-ul-li-bl dropdown">
-        <a style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="#">
+        <a id="blog" style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="#">
          Blog
              
         </a>
+        <script>        
+   
+                $(document).ready(function () {                                                               
+                   
+        
+                    $("#blog").click(function () {
+                                                                                                              
+                       
+                        $("#OtherActivities").hide();
+                        $("#divAgency").hide();
+                        $("#divAgency1").hide();
+                        $("#divAgency2").hide();
+                        $("#divAgency3").hide();
+                        $("#divAgency4").hide();
+                    });
+                });
+        
+        </script>
 </li>
 
 <li class="li nav-ul-li nav-ul-li-bl dropdown">
-        <a style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="index.html#about">
+        <a id="aboutus" style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="index.html#divAbout">
          About Us
              
         </a>
+        <script>        
+   
+                $(document).ready(function () {                                                               
+                   
+        
+                    $("#aboutus").click(function () {
+                                                                                                              
+                       
+                        $("#OtherActivities").hide();
+                        $("#divAgency").hide();
+                        $("#divAgency1").hide();
+                        $("#divAgency2").hide();
+                        $("#divAgency3").hide();
+                        $("#divAgency4").hide();
+                        $("#divAbout").show();
+                        
+                    });
+                });
+        
+        </script>
 </li>
         
 
 <li class="li nav-ul-li nav-ul-li-bl dropdown">
-        <a style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="index.html#contact">
+        <a id="contactus" style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="index.html#contact">
          Contact Us
              
         </a>
+        <script>        
+   
+                $(document).ready(function () {                                                               
+                   
+        
+                    $("#contacus").click(function () {
+                                                                                                              
+                       
+                        $("#OtherActivities").hide();
+                        $("#divAgency").hide();
+                        $("#divAgency1").hide();
+                        $("#divAgency2").hide();
+                        $("#divAgency3").hide();
+                        $("#divAgency4").hide();
+                        
+                    });
+                });
+        
+        </script>
 </li>
                  </ul> 
 
@@ -1263,7 +1439,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                            <li style="height: 100%;padding-top: 10px; vertical-align: -webkit-baseline-middle; ">
                             <section style="height: auto;width: auto; vertical-align: -webkit-baseline-middle; ">
 
-                                   <div style="background-color: #777; padding-top: 10px;" class="w3-half w3-container">
+                                   <div style="background-color: rgb(138, 137, 137); padding-top: 10px;" class="w3-half w3-container">
                                           
                                        <div style="color: #eafccf;text-align: center;" class=" w3-padding-top">
                                             
@@ -1331,6 +1507,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                             $("#divAgency2").hide();
                             $("#divAgency3").hide();
                             $("#divAgency4").hide();
+                            $("#OtherActivities").hide();
                             
                         });
                     });
@@ -1680,7 +1857,100 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
                                                        </div>
 
+                                                                                                            
+
                                                       
+                                            </section>
+
+                                            <section style="height: auto;width: 100%; background-color: #5c5858 ;">
+                                                    <div id="divAbout" style="display:none; color: #eafccf;" class=" ">
+ 
+                                                            <h2 style="color: #eafccf; text-align: center;">
+                                                                   Bingwa Safaris                                                                                                                           
+                                                               </h2>
+                                                               
+                                                               <table style="background-color: #022506;" class=" ">
+                                                                       <tr>
+                                                                         <th>   ,,,BINGWA SAFARIS LTD is a tour company which has a Swahili name meaning winner or champion,,,,                                                                                                                             
+
+                                                                                <br>  
+                                                                                BINGWA SAFARIS LTD is a registered tour company under the Kenyan constitution companies act .2015, where you can't hesitate booking with us and experience our services,, and in all our safaris we use 4*4 vehicles in order to get the best moments in the fields,,,
+                                                                            
+                                                                            
+                                                                         </th>
+                                                                         
+                                                                                
+                                                                         
+                                                                         
+                                                                         
+                                                                       </tr>                                                              
+                                                                       
+                                                               </table>
+                                                               <table class=" ">
+                                                                    <br>,,,we have come up with a package for the locals,,
+                                                                    MERU NATIONAL PARK ,,,
+                                                                    <br>
+                                                       
+                                                                    <tr>
+             
+                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                                                         <strong>300ksh</strong>
+                                                                      </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                                                            <strong>1,</strong> transport in a tour van
+                                                                      </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                                                            <strong>2,</strong> lunch of your choice at One Africa resort,,
+                                                                      </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                                                            <strong>3,</strong> two bottles of water
+                                                                      </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                                                            <strong>4,</strong> park fee
+                                                                      </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                                                            <strong>5,</strong> photography
+                                                                      </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                                                            <strong>6,</strong> team building
+                                                                      </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                                                            <strong>7,</strong> hiking
+                                                                      </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                                                            <strong>8,</strong> guiding is provided.
+                                                                      </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                                                            <strong>9</strong> ,, children below five years is free,,, but this package applies to those in MERU TOWN and MAUA TOWN,,
+                                                                      </td>
+                                                                     
+                                                                    </tr> 
+                                                                    
+                                                               </table>
+
+                                                               <p style="font-style: oblique;">
+                                                                    And we now have the option of LIPA POLE POLE FOR YOUR TRIP ,,, this are daily trips
+                                                               </p>
+
+                                                       </div>
                                             </section>
                                      
                   
@@ -1783,6 +2053,18 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                         
                                                                         <div class="qodef-tours-gallery-item qodef-tours-row-item qodef-item-space qodef-tour-item-no-rating post-5408 tour-item type-tour-item status-publish has-post-thumbnail hentry tour-category-christmas tour-category-featured" style="position: absolute; left: 0%; top: 0px;">
                                                                             
+                                                                                <div style="text-align: center;;width: auto;height: auto;">
+                                                                            
+                                                                                        <button    class="button2 qodef-btt-text" style="vertical-align:middle">
+                                                                                            <a id=""class="off">
+                                                                                                             
+                                                                                                                    IKWETA Safari Camp Nature Trail
+
+                                                                                            </a>
+                                                                                        </button>
+            
+                                                                                </div>
+                                                                           
                                                                             <div class="qodef-tours-gallery-item-image-holder">
                                                                                 
                                                                                 <div class="qodef-tours-gallery-item-image">
@@ -1817,12 +2099,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                     </div>
                                                                                     
                                                                                 </div>
-                                                                                <a id="naturewalk3" class="qodef-tours-gallery-item-link" href="index.html#divAgency1">
-                                                                                        <span class="qodef-tours-item-price " style="font-size: x-large;color: #160404; ">
-                                                                                               
-                                                                                                IKWETA Safari Camp Nature Trail
-                                                                                        </span>
-                                                                                </a>
+                                                                               
                                                                                 
                                                                                
                                                                                 
@@ -1844,6 +2121,19 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                         </div>
                                                                         
                                                                         <div class="qodef-tours-gallery-item qodef-tours-row-item qodef-item-space qodef-tour-item-no-rating post-5413 tour-item type-tour-item status-publish has-post-thumbnail hentry tour-category-featured tour-category-group_joining" style="position: absolute; left: 33.3005%; top: 0px;">
+                                                                            
+                                                                            
+                                                                                <div style="text-align: center;;width: auto;height: auto;">
+                                                                            
+                                                                                        <button    class="button2 qodef-btt-text" style="vertical-align:middle">
+                                                                                            <a id=""class="off">
+                                                                                                          
+                                                                                                                    Gatwe (“Skull”) Hill Nature Walk
+                                                                                                        
+                                                                                            </a>
+                                                                                        </button>
+            
+                                                                                </div>
                                                                             
                                                                             <div class="qodef-tours-gallery-item-image-holder">
                                                                                 
@@ -1878,12 +2168,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                     </div>
                                                                                     
                                                                                 </div>
-                                                                                <a id="naturewalk2" class="qodef-tours-gallery-item-link" href="index.html#divAgency2">
-                                                                                        <span class="qodef-tours-item-price " style="font-size: x-large;color: #160404; ">
-                                                                                               
-                                                                                                Gatwe (“Skull”) Hill Nature Walk
-                                                                                        </span>
-                                                                                </a>
+                                                                                
                                                                                 
                                                                             
                                                                                 
@@ -1906,6 +2191,19 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                         </div>
                                                                         
                                                                         <div class="qodef-tours-gallery-item qodef-tours-row-item qodef-item-space qodef-tour-item-no-rating post-5415 tour-item type-tour-item status-publish has-post-thumbnail hentry tour-category-featured tour-category-sgr_flying" style="position: absolute; left: 66.601%; top: 0px;">
+                                                                            
+                                                                            
+                                                                                <div style="text-align: center;;width: auto;height: auto;">
+                                                                            
+                                                                                        <button    class="button2 qodef-btt-text" style="vertical-align:middle">
+                                                                                            <a id=""class="off">
+                                                                                                               
+                                                                                                                    Nyambene Forest & Water Tower Nature Walk
+                                                                                                          
+                                                                                            </a>
+                                                                                        </button>
+            
+                                                                                </div>
                                                                             
                                                                             <div class="qodef-tours-gallery-item-image-holder">
                                                                                 
@@ -1940,12 +2238,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                     </div>
                                                                                     
                                                                                 </div>
-                                                                                <a id="naturewalk1" class="qodef-tours-gallery-item-link" href="index.html#divAgency3">
-                                                                                        <span class="qodef-tours-item-price " style="font-size: x-large;color: #160404; ">
-                                                                                               
-                                                                                                Nyambene Forest & Water Tower Nature Walk
-                                                                                        </span>
-                                                                                </a>
+                                                                               
                                                                               
                                                                             </div>
                                 
@@ -1966,6 +2259,23 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                         </div>
                                 
                                                                         <div class="qodef-tours-gallery-item qodef-tours-row-item qodef-item-space qodef-tour-item-no-rating post-5415 tour-item type-tour-item status-publish has-post-thumbnail hentry tour-category-featured tour-category-sgr_flying" style="position: absolute; left: 66.601%; top: 0px;">
+                                                                            
+                                                                            
+                                                                                <div style="text-align: center;;width: auto;height: auto;">
+                                                                            
+                                                                                        <button    class="button2 qodef-btt-text" style="vertical-align:middle">
+                                                                                            <a id=""class="off">
+                                                                                                              Magado [Igombe] Crater – Nyambene National Reserve
+                                                                                                                    Nature Walk
+                                                                                                                    
+                                                                                                            </span>
+                                                                                                    </a>
+                                                                                                  
+                                                                                            </a>
+                                                                                        </button>
+            
+                                                                                </div>
+                                                                            
                                                                             
                                                                             <div class="qodef-tours-gallery-item-image-holder">
                                                                                 
@@ -2000,14 +2310,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                     </div>
                                                                                     
                                                                                 </div>
-                                                                                <a id="naturewalk" class="qodef-tours-gallery-item-link" href="index.html#divAgency4">
-                                                                                        <span class="qodef-tours-item-price " style="font-size: x-large;color: #160404; ">
-                                                                                                Magado [Igombe] Crater – Nyambene National Reserve
-                                                                                                Nature Walk
-                                                                                                
-                                                                                        </span>
-                                                                                </a>
-                                                                              
+                                                                               
                                                                                 
                                                                             </div>
                                 
@@ -2106,6 +2409,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                        $("#divAgency3").hide();
                                                                        $("#divAgency4").hide();
                                                                        $("#divAgency").hide();
+                                                                       $("#OtherActivities").hide();
                                                                    });
                                                                });
                                                        
@@ -2164,6 +2468,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                     $("#divAgency3").hide();
                                                                     $("#divAgency4").hide();
                                                                     $("#divAgency").hide();
+                                                                    $("#OtherActivities").hide();
                                                                     
                                                                 });
                                                             });
@@ -2243,6 +2548,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                     $("#divAgency2").hide();
                                                                     $("#divAgency4").hide();
                                                                     $("#divAgency").hide();
+                                                                    $("#OtherActivities").hide();
                                                                 });
                                                             });
                                                     
@@ -2317,6 +2623,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                     $("#divAgency2").hide();
                                                                     $("#divAgency3").hide();
                                                                     $("#divAgency").hide();
+                                                                    $("#OtherActivities").hide();
                                                                 });
                                                             });
                                                     
@@ -2916,7 +3223,34 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
 </div>
 </div>
 <div class="qodef-cta-button-holder">
-<div class="qodef-cta-button"><a itemprop="url" href="https://www.bingwasafaris.co.ke/about-us" target="_self" style="color: #222222;background-color: #ffffff" class="qodef-btn qodef-btn-large qodef-btn-solid qodef-btn-custom-hover-bg qodef-btn-custom-hover-color" data-hover-color="#ffffff" data-hover-bg-color="#23a9af">    <span class="qodef-btn-text">Learn More About Us</span>    </a></div>
+<div class="qodef-cta-button">
+    
+    <a id="learnmore" itemprop="url" href="index.html#divAbout" target="_self" style="color: #222222;background-color: #ffffff" class="qodef-btn qodef-btn-large qodef-btn-solid qodef-btn-custom-hover-bg qodef-btn-custom-hover-color" data-hover-color="#ffffff" data-hover-bg-color="#23a9af">
+            <span class="qodef-btn-text">
+                Learn More About Us
+            </span>   
+     </a>
+</div>
+<script>        
+   
+        $(document).ready(function () {                                                               
+           
+
+            $("#learnmore").click(function () {
+                                                                                                      
+               
+                $("#OtherActivities").hide();
+                $("#divAgency").hide();
+                $("#divAgency1").hide();
+                $("#divAgency2").hide();
+                $("#divAgency3").hide();
+                $("#divAgency4").hide();
+                $("#divAbout").show();
+                
+            });
+        });
+
+</script>
 </div>
 </div>
                                   </div>
