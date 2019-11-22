@@ -280,9 +280,9 @@
                     .vc_custom_1570786411823{padding-right: 50px !important;
                         padding-bottom: 0px !important;
                         padding-left:50px !important;}
-                        .vc_custom_15707864118231{padding-right: 50px !important;
+                        .vc_custom_15707864118231{padding-right: 0px !important;
                         padding-bottom: 0px !important;
-                        padding-left:50px !important;}
+                        padding-left:0px !important;}
                         .vc_custom_1570785313381{
                             padding-right: 0px !important;
                             padding-left:50px !important;}
@@ -810,7 +810,8 @@
                                                     background-color: #cdd4ce;
                                                 }
                                                 </style>
-        
+
+
         
         
 </head>
@@ -935,8 +936,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                 });
         
         </script>
-</li>
-     
+</li>     
 
 
 <li class="li nav-ul-li nav-ul-li-bl dropdown">
@@ -1035,11 +1035,6 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
         
 </li>
-
-
-
-
-
 
 
 <li class="li nav-ul-li nav-ul-li-bl dropdown">
@@ -1172,6 +1167,8 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 </li>
                  </ul> 
 
+                
+
                  
 
              </div>
@@ -1191,9 +1188,9 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
     <!--  slider -->
 
-    <section class="parallax-image-1"style="margin: auto;width: 100%; height: 500px">
+    <section class="parallax-image-1"style="margin: auto;width: 100%;background-color: transparent height: 500px">
 
-         <div style="margin: auto;width: 100%; height: 900px; background-color: transparent;">
+         <div style="margin: auto;width: 100%; height: 500px; background-color: transparent;">
 
          </div>
 
@@ -1254,7 +1251,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
 
 
-                                <div class="parallax-image-1 vc_row wpb_row vc_row-fluid vc_custom_1570616577143 vc_row-has-fill qodef-content-aligment-center">
+                                <div style="background-color: transparent; " class=" vc_row wpb_row vc_row-fluid vc_custom_1570616577143 vc_row-has-fill qodef-content-aligment-center">
                    
                    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-1 vc_col-md-10">
                        
@@ -1264,12 +1261,12 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                
                                <div class="qodef-section-title-holder ">
                                    
-                                   <div class="qodef-st-inner">
+                                   <div class="qodef-st-inner" style="background-color: transparent;">
                                        
-                                       <span class="qodef-st-tagline" style="color:#ffffff; margin-bottom: -6px">
+                                       <span class="qodef-st-tagline" style="background-color: transparent;color:#0e0808; margin-bottom: -6px">
                                            Most Popular Attraction
                                        </span>
-                                       <h2 class="qodef-st-title" style="color: #ffffff;">
+                                       <h2 class="qodef-st-title" style="background-color: transparent;color: #080404;">
                                            Meru National Park
                                        </h2>
                                       
@@ -1420,11 +1417,12 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
                            </li>
                            <li style="height: auto;padding-top: 10px;">
-                            <section style="height: auto;width: auto; ">
+                           
+                            <section style="min-height: 380px; width: auto; ">
 
                                    <div style="background-color: transparent;" class="w3-half w3-container">
                                           
-                                       <div style="color: #eafccf;text-align: center;" class=" w3-padding-top">
+                                       <div style="color: #eafccf;text-align: center;min-height: 200px" class=" w3-padding-top">
                                             
                                            <div class="slideshow-container" style="height: auto;">
 
@@ -1442,12 +1440,52 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                            </div> 
                                            
                                        </div>
+
+
+
+                                       <section style="height: auto;width: auto;text-align: center; ">
+
+           
+
+                                            <button   id="lnkAgency" class="button qodef-btt-text" style="vertical-align:middle">
+                                                <a id="" href="index.html#divAgency" class="off">
+                                                        <span class="qodef-btt-text">
+                                                            
+                                                                    <strong>Discover</strong>
+                                                                                                                                                            
+                                                        </span>
+                                                </a>
+                                            </button>
+                            
+                                        </section>
                                           
 
                                    </div>
 
 
-                            </section> 
+                            </section>
+                            
+                              
+                                   
+                    
+                            <script>        
+                       
+                                        $(document).ready(function () {                                                               
+                                           
+                                
+                                            $("#lnkAgency").click(function () {
+                                                                                                                                      
+                                                $("#divAgency").show();
+                                                $("#divAgency1").hide();
+                                                $("#divAgency2").hide();
+                                                $("#divAgency3").hide();
+                                                $("#divAgency4").hide();
+                                                $("#OtherActivities").hide();
+                                                
+                                            });
+                                        });
+                                
+                            </script>
                             
                             
 
@@ -1470,41 +1508,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                  
         
             </section>
-            <section style="height: auto;width: 50%;text-align: center; float:right; ">
-
            
-
-                <button   id="lnkAgency" class="button qodef-btt-text" style="vertical-align:middle">
-                    <a id="" href="index.html#divAgency" class="off">
-                            <span class="qodef-btt-text">
-                                
-                                        <strong>Discover</strong>
-                                                                                                                                
-                            </span>
-                    </a>
-                </button>
-
-            </section>  
-               
-
-            <script>        
-   
-                    $(document).ready(function () {                                                               
-                       
-            
-                        $("#lnkAgency").click(function () {
-                                                                                                                  
-                            $("#divAgency").show();
-                            $("#divAgency1").hide();
-                            $("#divAgency2").hide();
-                            $("#divAgency3").hide();
-                            $("#divAgency4").hide();
-                            $("#OtherActivities").hide();
-                            
-                        });
-                    });
-            
-            </script>
             
 
               
@@ -1597,7 +1601,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
 
 
-                                     <div style="height: auto;color: #222222; background-color: #cdd4ce;width: 100%;" class="parallax-image-1 vc_row wpb_row vc_row-fluid vc_custom_1570616607329 vc_row-has-fill">
+                                     <div style="height: auto;color: #222222; background-color: transparent;width: 100%;" class=" vc_row wpb_row vc_row-fluid vc_custom_1570616607329 vc_row-has-fill">
                                        
 
                                                 
@@ -1642,7 +1646,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                        </tr> 
                                                        
                                                      </table>
-                                                      <table style="margin-top: 30px;color: #222222; background-color: #cdd4ce; " class="parallax-image-1 ">
+                                                      <table style="margin-top: 30px;color: #222222; background-color: #cdd4ce; " class=" ">
                                                            <tr style=" color: #222222; background-color: #cdd4ce;"> 
                                                                     
                                                                    <th style="color: #222222; background-color: #cdd4ce">Day 1- Nairobi to Meru National Park</th>
@@ -1651,7 +1655,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                            </tr>
 
                                                       </table>
-                                                      <table class="parallax-image-2  " >
+                                                      <table class=" " >
                                                            <tr> 
                                                                     
                                                                    <td style=" color: #222222; background-color: #cdd4ce; ">
@@ -1665,7 +1669,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                            </tr>
 
                                                       </table>
-                                                      <table style="color: #222222; background-color: #cdd4ce;" class="parallax-image-2  ">
+                                                      <table style="color: #222222; background-color: #cdd4ce;" class=" ">
 
                                                            <tr style=" color: #222222; background-color: #cdd4ce;"> 
                                                                     
@@ -1674,7 +1678,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                            
                                                            </tr> 
                                                       </table>
-                                                      <table style="color: #222222; background-color: #cdd4ce;" class="parallax-image-2  ">
+                                                      <table style="color: #222222; background-color: #cdd4ce;" class=" ">
 
                                                            <tr> 
                                                                     
@@ -1686,7 +1690,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                            
                                                            </tr> 
                                                       </table>
-                                                      <table style="color: #222222; background-color: #cdd4ce;" class="parallax-image-2  ">
+                                                      <table style="color: #222222; background-color: #cdd4ce;" class=" ">
                                                            <tr style=" color: #222222; background-color: #cdd4ce;"> 
                                                                     
                                                                    <th>Day 3- Meru to Nairobi</th>
@@ -1695,7 +1699,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                            </tr>                                                               
                                                               
                                                       </table>
-                                                      <table style="color: #222222; background-color: #cdd4ce;" class="parallax-image-2 ">
+                                                      <table style="color: #222222; background-color: #cdd4ce;" class=" ">
                                                            <tr> 
                                                                     
                                                                    <td style="color: #222222; background-color: #cdd4ce;">
@@ -1707,7 +1711,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                            </tr>                                                               
                                                               
                                                       </table>
-                                                      <table style="margin-top: 30px;color: #222222; background-color: #cdd4ce; " class="parallax-image-2 ">
+                                                      <table style="margin-top: 30px;color: #222222; background-color: #cdd4ce; " class=" ">
                                                            <tr style=" color: #222222; background-color: #cdd4ce;">
                                                              <th>Package Includes;</th>
                                                              <th>Package Excludes;</th>
@@ -1870,7 +1874,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                    
 
                   
-                                     <div class="vc_row wpb_row vc_row-fluid vc_custom_15707864118231">
+                                     <div style=" background-color: #ffffff;" class="vc_row wpb_row vc_row-fluid vc_custom_15707864118231">
                      
                                         <section style="background-color: transparent; width: 100%;">
                                                 <div class="wpb_column vc_column_container vc_col-sm-12" style="width">
@@ -1911,7 +1915,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                        
 
 
-                                                                        <ul class=" "  style="margin:auto;color: #222222; float: right; height: auto;width: 100%; background-color: transparent">
+                                                                        <ul class=" "  style="padding-left: 80px;background-color: transparent; margin:auto;color: #222222; float: right; height: auto;width: 100%; ">
                                                                                
                                                                             
                                                                             
@@ -1919,7 +1923,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                         <div id="naturewalk" style="text-align: center;;width: auto;height: 100px;">
                                                                             
                                                                                                 <button    class="button2 qodef-btt-text" style="vertical-align:middle">
-                                                                                                    <a id=""class="off" style="font-family:Satisfy,cursive;">
+                                                                                                    <a id=""class="off" style="color: #222222;font-family:Satisfy,cursive;">
                                                                                                                      
                                                                                                                             IKWETA Safari Camp Nature Trail
         
@@ -1943,7 +1947,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                                     
                                                                                                     <div class="qodef-tours-gallery-title-holder">
                                                                                                         
-                                                                                                        <h4 class="qodef-tour-title">
+                                                                                                        <h4 style="color: #222222;" class="qodef-tour-title">
                                                                                                                 Cost: Free
                                                                                                                
                                                                                                             
@@ -1986,7 +1990,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                         <div style="text-align: center;;width: auto;height: 100px;">
                                                                             
                                                                                                 <button    class="button2 qodef-btt-text" style="vertical-align:middle">
-                                                                                                    <a id=""class="off" style="font-family:Satisfy,cursive;">
+                                                                                                    <a id=""class="off" style="color: #222222;font-family:Satisfy,cursive;">
                                                                                                                        
                                                                                                                             Nyambene Forest & Water Tower Nature Walk
                                                                                                                   
@@ -2010,7 +2014,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                                     
                                                                                                     <div class="qodef-tours-gallery-title-holder">
                                                                                                         
-                                                                                                        <h4 class="qodef-tour-title">
+                                                                                                        <h4 style="color: #222222;" class="qodef-tour-title">
                                                                                                                 Cost: KES 3,000 for entry into the forest & guide
                                                                                                         </h4>
                                                                                                         <span class="qodef-tours-gallery-item-price-holder">
@@ -2054,7 +2058,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                         <div id="excursion" style="text-align: center;;width: auto;height: 100px;">
                                                                             
                                                                                                 <button    class="button2 qodef-btt-text" style="vertical-align:middle">
-                                                                                                    <a id=""class="off" style="font-family:Satisfy,cursive;">
+                                                                                                    <a id=""class="off" style="color: #222222;font-family:Satisfy,cursive;">
                                                                                                                       Magado [Igombe] Crater – Nyambene National Reserve
                                                                                                                             Nature Walk
                                                                                                                             
@@ -2081,7 +2085,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                                     
                                                                                                     <div class="qodef-tours-gallery-title-holder">
                                                                                                         
-                                                                                                        <h4 class="qodef-tour-title">
+                                                                                                        <h4 style="color: #222222;" class="qodef-tour-title">
                                                                                                                 Cost: KES 3,000 Full-day Excursion
                                                                                                         </h4>
                                                                                                         <span class="qodef-tours-gallery-item-price-holder">
@@ -2124,7 +2128,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                         <div style="text-align: center;;width: auto;height: 100px;">
                                                                         
                                                                                                 <button    class="button2 qodef-btt-text" style="vertical-align:middle">
-                                                                                                    <a id=""class="off" style="font-family:Satisfy,cursive;">
+                                                                                                    <a id=""class="off" style="color: #222222;font-family:Satisfy,cursive;">
                                                                                                         Gatwe (“Skull”) Hill Nature Walk       
                                                                                                                     </span>
                                                                                                             </a>
@@ -2150,7 +2154,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                                     
                                                                                                     <div class="qodef-tours-gallery-title-holder">
                                                                                                         
-                                                                                                        <h4 class="qodef-tour-title">
+                                                                                                        <h4 style="color: #222222;" class="qodef-tour-title">
                                                                                                             Cost: KES 500 for 4 pax; KES 100 for each additional pax.
                                                                                                         </h4>
                                                                                                         <span class="qodef-tours-gallery-item-price-holder">
@@ -2525,9 +2529,9 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                         
                                         <div class="vc_column-inner vc_custom_1570785241924"><div class="wpb_wrapper"><div class="qodef-section-title-holder ">
 <div class="qodef-st-inner">
-    <span class="qodef-st-tagline" style="color: #022506; margin-bottom: -6px">
+    <span class="qodef-st-tagline" style="color: #ffffff; margin-bottom: -6px">
 Choose Your			</span>
-            <h2 class="qodef-st-title">
+            <h2 style="color: #ffffff;" class="qodef-st-title">
 Destinations in Kenya!			</h2>
             <p class="qodef-st-text" style="color: #f5eeee; font-size: 17px;line-height: 28px">
 Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as your partner.			</p>
