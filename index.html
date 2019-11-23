@@ -206,6 +206,8 @@
                             background-color: #f9f9f9;
                             min-width: 160px;
                             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            
+                         
                         }
                         
                         .dropdown-content a {
@@ -213,12 +215,14 @@
                             padding: 12px 16px;
                             text-decoration: none;
                             display: block;
+                            height: auto!important;
                         }
                         
                         .dropdown-content a:hover {background-color: #f1f1f1}
                         
                         .dropdown:hover .dropdown-content {
                             display: block;
+                            padding-top: 50px;
                         }
                         
                         .dropdown:hover .dropbtn {
@@ -262,7 +266,37 @@
             margin-top: -350px;
             }
             }
-            .vc_custom_1570616577143{background-color: #efefef !important;}.vc_custom_1570616607329{padding-right: 50px !important;padding-bottom: 50px !important;padding-left: 50px !important;background-color: #efefef !important;}.vc_custom_1570786411823{padding-right: 50px !important;padding-bottom: 50px !important;padding-left: 50px !important;}.vc_custom_1570785313381{padding-right: 50px !important;padding-left: 50px !important;}.vc_custom_1570785100869{padding-right: 50px !important;padding-left: 50px !important;}.vc_custom_1536656145161{padding-top: 40px !important;padding-bottom: 40px !important;}.vc_custom_1570785241924{padding-top: 40px !important;}.vc_custom_1570785179966{padding-top: 40px !important;}.vc_custom_1570785241924{padding-top: 40px !important;}
+            .vc_custom_1570616577143{
+                background-color: #efefef !important;}
+                .vc_custom_1570616607329{
+                    padding-right: 50px !important;
+                    padding-bottom: 0px !important;
+                    padding-left: 50px !important;
+                    background-color:transparent !important;}
+                    .vc_custom_15706166073291{
+                    padding-right: 0px !important;
+                    padding-bottom: 0px !important;
+                    padding-left: 50px !important;
+                    background-color:transparent !important;}
+                    .vc_custom_1570786411823{padding-right: 50px !important;
+                        padding-bottom: 0px !important;
+                        padding-left:50px !important;}
+                        .vc_custom_15707864118231{padding-right: 0px !important;
+                        padding-bottom: 0px !important;
+                        padding-left:0px !important;}
+                        .vc_custom_1570785313381{
+                            padding-right: 0px !important;
+                            padding-left:50px !important;}
+                            .vc_custom_1570785100869{padding-right: 50px !important;
+                                padding-left: 50px !important;}
+                                .vc_custom_1536656145161{padding-top: 0px !important;
+                                    padding-bottom: 0px !important;}
+                                    .vc_custom_1570785241924{
+                                        padding-top: 0px !important;}
+                                        .vc_custom_1570785179966{
+                                            padding-top: 0px !important;}
+                                            .vc_custom_1570785241924{
+                                                padding-top: 0px !important;}
             </style>
             <script type="text/javascript" src="jquery.js?ver=1.12.4-wp"></script>
             <script type="text/javascript" src="jquery-migrate.min.js?ver=1.4.1"></script>
@@ -616,6 +650,11 @@
                               .nav-ul-show {
                                 display: block!important;
                               }
+                              
+                              .sidenave {
+                                display: none!important;  
+                              }
+                        
                           }
                  
                 
@@ -773,11 +812,18 @@
                                                 tr:nth-child(even){background-color: #f2f2f2}
                                                 
                                                 th {
-                                                    background-color: rgb(37, 32, 23);
-                                                    color: white;
+                                                    color: #222222; 
+                                                    background-color: #cdd4ce;
                                                 }
+                                                
                                                 </style>
-        
+                                                <style>
+                                                    .myheight{
+                                                        height: 200px!important;
+                                                    }
+                                                </style>
+
+
         
         
 </head>
@@ -843,6 +889,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                                                       
                
                 $("#OtherActivities").hide();
+                $("#packactivities").hide();
                 
             });
         });
@@ -862,8 +909,32 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
                 
 
-                 <div style="margin: auto; width: auto; height: auto;background-color: #222222;" class="module widget-handle mobile-toggle right visible-sm visible-xs">
-                     <i style="width: 50px;padding-top: 17px;height: 50px;" class="navbar-brand ti-menu" herf="#" id="menu_btn"></i>
+                 <div id="sidenave"  class="module widget-handle mobile-toggle right sidenave" style=" margin: auto; width: auto; height: auto;background-color: rgb(19, 9, 9);">
+                   
+                    <div style="width: 50px;padding-top: 10px;height: 50px; " class="navbar-brand qodef-position-right module widget-handle mobile-toggle right visible-sm visible-xs">
+                           
+                        <div class="qodef-position-right-inner">
+                            
+                           
+                            <a class="qodef-side-menu-button-opener qodef-icon-has-hover qodef-side-menu-button-opener-svg-path" href="javascript:void(0)">
+                                <span class="qodef-side-menu-icon">
+                                    <i style="width: 50px;padding: 17px;height: 50px;" class="navbar-brand ti-menu" herf="#" ></i>
+                                  <!-- <svg class="qodef-setsail-burger" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 26 20" enable-background="new 0 0 26 20" xml:space="preserve">
+                                        <rect x="10.5" width="13.7" height="2.4">
+                                        </rect>
+                                        <rect x="8" y="8.8" width="16.2" height="2.4">
+                                        </rect>
+                                        <rect x="1.7" y="17.6" width="22.5" height="2.4">
+                                        </rect>
+                                    </svg>
+                                -->            
+                                </span>    
+                            </a>                    
+                        
+                        </div>
+                        
+                    </div>
+                    
                  </div>
 
 
@@ -896,13 +967,12 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                         $("#divAgency2").hide();
                         $("#divAgency3").hide();
                         $("#divAgency4").hide();
-                        
+                        $("#packactivities").hide();
                     });
                 });
         
         </script>
-</li>
-     
+</li>     
 
 
 <li class="li nav-ul-li nav-ul-li-bl dropdown">
@@ -916,13 +986,14 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
     
                 $("#traditionalsafaris").click(function () {
                                                                                                           
-                   
+                    $("#packactivities").show();
                     $("#OtherActivities").hide();
                     $("#divAgency").hide();
                         $("#divAgency1").hide();
                         $("#divAgency2").hide();
                         $("#divAgency3").hide();
                         $("#divAgency4").hide();
+                        
                     
                 });
             });
@@ -932,25 +1003,25 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
 
 
-    <div class="dropdown-content dropdown-menu " style="padding-top: 0px; background-color: darkslategray">
+    <div id="packactivities" class="dropdown-content dropdown-menu " style="padding-top: 50px; background-color: transparent">
 
-        <a id="parksafari" href="index.html#divAgency" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
+        <a style="background-color: darkslategray" id="parksafari" href="index.html#divAgency" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
        
                   3 days / 2 nights Meru National Park safari
         </a>
-        <a id="TraditionalSafaris" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
+        <a style="background-color: darkslategray" id="Safaris" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
        
             Other Activities 
         </a>
         <div class="dropdown-submenu " id="OtherActivities" style="display:none;" >
                    <ul  id="" class="dropdown-content dropdown-menu " style="padding-top: 0px; background-color: darkslategray">
                        <li class="li nav-ul-li nav-ul-li-bl">
-                           <a href="index.html#naturewalk3">
+                           <a href="index.html#naturewalk">
                                Nature walks
                            </a>
                        </li>
                        <li class="li nav-ul-li nav-ul-li-bl">
-                           <a href="index.html#naturewalk1">
+                           <a href="index.html#excursion">
                                Excursion
                            </a>
                        </li>
@@ -961,11 +1032,14 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                     $(document).ready(function () {                                                               
                        
             
-                        $("#TraditionalSafaris").click(function () {
+                        $("#Safaris").click(function () {
                                                                                                                   
                             $("#OtherActivities").show();
+                            $("#packactivities").show();
+                            $("#traditionalsafaris").show();
                         });
                     });
+                    
             
         </script>
          <script>        
@@ -999,11 +1073,6 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 </li>
 
 
-
-
-
-
-
 <li class="li nav-ul-li nav-ul-li-bl dropdown">
 <a id="daytours" style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="#">
    Day Tours
@@ -1023,6 +1092,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                         $("#divAgency2").hide();
                         $("#divAgency3").hide();
                         $("#divAgency4").hide();
+                        $("#packactivities").hide();
                 
             });
         });
@@ -1030,14 +1100,14 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 </script>
 
 
-<div class="dropdown-content dropdown-menu " style="padding-top: 0px; background-color: darkslategray">
+<div class="dropdown-content dropdown-menu " style="padding-top: 50px; background-color: transparent">
 
- <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
+ <a style="background-color: darkslategray" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
 
           Lake Naivasha Day Tour
 
  </a>
- <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
+ <a style="background-color: darkslategray" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
 
           LAKE NAKURU NATIONAL PARK DAY TOUR
 
@@ -1050,7 +1120,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 </li>
 
 <li class="li nav-ul-li nav-ul-li-bl dropdown">
-        <a id="blog" style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="#">
+        <a id="blog" style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="blog.html" target="_blank">
          Blog
              
         </a>
@@ -1068,6 +1138,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                         $("#divAgency2").hide();
                         $("#divAgency3").hide();
                         $("#divAgency4").hide();
+                        $("#packactivities").hide();
                     });
                 });
         
@@ -1094,6 +1165,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                         $("#divAgency3").hide();
                         $("#divAgency4").hide();
                         $("#divAbout").show();
+                        $("#packactivities").hide();
                         
                     });
                 });
@@ -1121,13 +1193,20 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                         $("#divAgency2").hide();
                         $("#divAgency3").hide();
                         $("#divAgency4").hide();
+                        $("#divAbout").hide();
+                        $("#packactivities").hide();
                         
                     });
                 });
         
         </script>
 </li>
+<li class="li nav-ul-li nav-ul-li-bl dropdown">
+    
+</li>
                  </ul> 
+
+                
 
                  
 
@@ -1141,6 +1220,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
     </div> 
 
+  
 
 
 
@@ -1148,91 +1228,326 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
     <!--  slider -->
 
-    <section class="parallax-image-1"style="margin: auto;width: 100%; height: 500px">
+    <section class="parallax-image-1"style="margin: auto;width: 100%;background-color: transparent height: 500px">
 
-         <div style="margin: auto;width: 100%; height: 900px; background-color: transparent;">
+         <div style="margin: auto;width: 100%; height: 500px; background-color: transparent;">
 
          </div>
 
 
-    </section>
+    </section>  
+    
+    <section class=" qodef-side-menu ps sidenave " style="">
 
 
-
-
-
-
-
-    <section class="qodef-side-menu ps">
-        <a class="qodef-close-side-menu qodef-close-side-menu-svg-path" href="#">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+        <a class="qodef-close-side-menu qodef-close-side-menu-svg-path" style="padding: 0px;background-color: #020202;" href="#">
+           
+           <div style="height: auto;width: auto;background-color: #f3f0f0;">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" background-color="white">
                 <line fill="none" x1="5.4" y1="15.6" x2="5.4" y2="15.6">
                 </line>                
                 <line stroke-width="1.5" stroke-miterlimit="10" x1="0.5" y1="0.6" x2="19.4" y2="19.4">
                 </line>
                 <line stroke-width="1.5" stroke-miterlimit="10" x1="19.4" y1="0.6" x2="0.6" y2="19.4">
                 </line>
-            </svg>
+                </svg>
+
+           </div>
+
+
+            <ul class=" "  style="margin-top:0px; list-style: none;padding-top: 0px;padding-right: 0px; display: block ;float:right;color: #222222;height: auto;width: auto; background-color: #234344">
+           
+                <li class=" ">
+                        <a id="home" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="index.html">
+                         Home
+                             
+                        </a>
+                        <script>        
+                   
+                                $(document).ready(function () {                                                               
+                                   
+                        
+                                    $("#home").click(function () {
+                                                                                                                              
+                                       
+                                        $("#OtherActivities").hide();
+                                                                                                       
+                                        $("#divAgency").hide();
+                                        $("#divAgency1").hide();
+                                        $("#divAgency2").hide();
+                                        $("#divAgency3").hide();
+                                        $("#divAgency4").hide();
+                                        $("#packactivities").hide();
+                                        $("#daytour").hide(); 
+                                    });
+                                });
+                        
+                        </script>
+                </li>   
+                
+                <li class=" ">
+                    <a id="traditionalsafaris1" style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="#">
+                        Traditional Safaris 
+                    </a>
+                    <script>        
+                   
+                            $(document).ready(function () {                                                               
+                               
+                    
+                                $("#traditionalsafaris1").click(function () {
+                                                                                                                          
+                                    $("#packactivities1").show();
+                                    $("#OtherActivities1").hide();
+                                    $("#divAgency").hide();
+                                        $("#divAgency1").hide();
+                                        $("#divAgency2").hide();
+                                        $("#divAgency3").hide();
+                                        $("#divAgency4").hide();
+                                        $("#daytour").hide(); 
+                                        
+                                    
+                                });
+                            });
+                    
+                    </script>
+                
+                
+                
+                
+                    <div id="packactivities1" class="dropdown-content dropdown-menu " style="height:auto;padding-top: 0px; background-color: darkslategray">
+                
+                        <a id="parksafari1" href="index.html#divAgency" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
+                       
+                                  3 days / 2 nights Meru National Park safari
+                        </a>
+                        <a id="Safaris1" style="height: auto;" class=" dropbtn" >
+                            Other Activities 
+   
+                        </a>
+                        <div id="OtherActivities1" class="dropdown-content dropdown-menu left " style=" height:auto;padding-top: 0px; background-color: darkslategray">
+                
+                            <a id="" href="index.html#naturewalk" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
+                           
+                                Nature walks
+                            </a>
+                            <a id="" style="height: auto;" class=" dropbtn" href="index.html#excursion">
+                                Excursion
+       
+                            </a>
+                        </div>
+                        
+                        <script>        
+                       
+                            $(document).ready(function () {                                                               
+                               
+                    
+                                $("#Safaris1").click(function () {
+                                                                                                                          
+                                    $("#OtherActivities1").show();                                      
+                                    $("#divAgency").hide();
+                                        $("#divAgency1").hide();
+                                        $("#divAgency2").hide();
+                                        $("#divAgency3").hide();
+                                        $("#divAgency4").hide();
+                                        $("#daytour").hide(); 
+                                        
+                                    
+                                });
+                            });
+                    
+                    </script>
+                    
+                       
+
+                        
+                        
+                         <script>        
+                   
+                                $(document).ready(function () {                                                               
+                                   
+                        
+                                    $("#parksafari1").click(function () {
+                                                                                                                              
+                                        $("#divAgency").show();
+                                        $("#divAgency1").hide();
+                                        $("#divAgency2").hide();
+                                        $("#divAgency3").hide();
+                                        $("#divAgency4").hide();
+                                        $("#OtherActivities1").hide();
+                                        $("#daytour").hide(); 
+                                        
+                                    });
+                                });
+                        
+                        </script>
+                
+                    </div>
+                   
+                   
+                              
+                
+                
+                
+                
+                
+                
+                        
+                </li>           
+                
+                <li class=" ">
+                        <a id="daytours1" style="height: auto;" class=" dropbtn" >
+                                Day Tours 
+       
+                            </a>
+                            <div id="daytour" class="dropdown-content dropdown-menu left " style=" height:auto;padding-top: 0px; background-color: darkslategray">
+                    
+                                <a id="" href="" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >
+                               
+                                        Lake Naivasha Day Tour
+                                </a>
+                                <a id="" style="height: auto;" class=" dropbtn" >
+                                        LAKE NAKURU NATIONAL PARK DAY TOUR
+           
+                                </a>
+                            </div>
+                            
+                            <script>        
+                           
+                                $(document).ready(function () {                                                               
+                                   
+                        
+                                    $("#daytours1").click(function () {
+                                                                                                                              
+                                        $("#daytour").show();                                      
+                                        $("#divAgency").hide();
+                                            $("#divAgency1").hide();
+                                            $("#divAgency2").hide();
+                                            $("#divAgency3").hide();
+                                            $("#divAgency4").hide();
+                                            $("#packactivities1").hide();
+                                            $("#OtherActivities1").hide();
+                                        
+                                    });
+                                });
+                        
+                        </script>
+                
+                
+               
+                
+                </li>
+                
+                <li class=" ">
+                        <a id="blog1" style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="blog.html" target="_blank">
+                         Blog
+                             
+                        </a>
+                        <script>        
+                   
+                                $(document).ready(function () {                                                               
+                                   
+                        
+                                    $("#blog1").click(function () {
+                                                                                                                              
+                                       
+                                        $("#OtherActivities1").hide();
+                                        $("#divAgency").hide();
+                                        $("#divAgency1").hide();
+                                        $("#divAgency2").hide();
+                                        $("#divAgency3").hide();
+                                        $("#divAgency4").hide();
+                                        $("#packactivities1").hide();
+                                        $("#daytour").hide(); 
+                                    });
+                                });
+                        
+                        </script>
+                </li>
+                
+                <li class=" ">
+                        <a id="aboutus1" style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="index.html#divAbout">
+                         About Us
+                             
+                        </a>
+                        <script>        
+                   
+                                $(document).ready(function () {                                                               
+                                   
+                        
+                                    $("#aboutus1").click(function () {
+                                                                                                                              
+                                       
+                                        $("#OtherActivities1").hide();
+                                        $("#divAgency").hide();
+                                        $("#divAgency1").hide();
+                                        $("#divAgency2").hide();
+                                        $("#divAgency3").hide();
+                                        $("#divAgency4").hide();
+                                        $("#divAbout").show();
+                                        $("#packactivities1").hide();
+                                        $("#daytour").hide(); 
+                                        
+                                    });
+                                });
+                        
+                        </script>
+                </li>                    
+                
+                <li class=" ">
+                        <a id="contactus1" style="" class="navbar-header navbar-brand nav-ul-li-a nav-ul-li-a-no dropbtn" href="index.html#contact">
+                         Contact Us
+                             
+                        </a>
+                        <script>        
+                   
+                                $(document).ready(function () {                                                               
+                                   
+                        
+                                    $("#contacus1").click(function () {
+                                                                                                                              
+                                       
+                                        $("#OtherActivities1").hide();
+                                        $("#divAgency").hide();
+                                        $("#divAgency1").hide();
+                                        $("#divAgency2").hide();
+                                        $("#divAgency3").hide();
+                                        $("#divAgency4").hide();
+                                        $("#divAbout").hide();
+                                        $("#packactivities1").hide();
+                                        $("#daytour").hide(); 
+                                        
+                                    });
+                                });
+                        
+                        </script>
+                </li>
+    
+               
+                                 
+            </ul>
+            
         </a>
         
-        <div class="widget qodef-separator-widget">
-
-            <div class="qodef-separator-holder clearfix  qodef-separator-center qodef-separator-normal">
-                
-                <div class="qodef-separator" style="border-style: solid;margin-top: 25px">
-               
-                </div>
-                
-            </div>
-            
-        </div>
         
-        <div class="widget qodef-social-icons-group-widget qodef-circle-icons text-align-center">
-            
-            <div class="qodef-widget-title-holder">
-                
-                <h5 class="qodef-widget-title">
-                    Follow US
-                </h5>
-                
-            </div>
-            
-            <a class="qodef-social-icon-widget-holder qodef-icon-has-hover" style="font-size: 16px;margin: 18px 7px -9px 0;" href="#" target="_blank">
-                <span class="qodef-social-icon-widget fab fa-twitter">
-                </span>
-            </a>
-            <a class="qodef-social-icon-widget-holder qodef-icon-has-hover" style="font-size: 16px;margin: 18px 7px -9px 0;" href="#" target="_blank">
-                <span class="qodef-social-icon-widget fab fa-pinterest-p">
-                </span>
-            </a>
-            <a class="qodef-social-icon-widget-holder qodef-icon-has-hover" style="font-size: 16px;margin: 18px 7px -9px 0;" href="https://www.facebook.com/bingwasafaris/" target="_blank">
-                <span class="qodef-social-icon-widget fab fa-facebook-f">
-                </span>
-            </a>
-            <a class="qodef-social-icon-widget-holder qodef-icon-has-hover" style="font-size: 16px;margin: 18px 7px -9px 0;" href="https://www.instagram.com/bingwasafaris/" target="_blank">
-                <span class="qodef-social-icon-widget fab fa-instagram">
-                </span>
-            </a>
-            
-        </div>
         
-        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
-            
-            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;">
-           
-            </div>
-            
-        </div>
-        
-        <div class="ps__rail-y" style="top: 0px; right: 0px;">
-            
-            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;">
-                
-            </div>
-            
-        </div>
-        
+       
     </section>
+
+
+
+
+
+
+
+
+
+    
+  
+
+
+
+
+
 
 
 
@@ -1283,7 +1598,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
 
 
-                                <div class="parallax-image-1 vc_row wpb_row vc_row-fluid vc_custom_1570616577143 vc_row-has-fill qodef-content-aligment-center">
+                                <div style="background-color: transparent; " class=" vc_row wpb_row vc_row-fluid vc_custom_1570616577143 vc_row-has-fill qodef-content-aligment-center">
                    
                    <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-1 vc_col-md-10">
                        
@@ -1293,12 +1608,12 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                
                                <div class="qodef-section-title-holder ">
                                    
-                                   <div class="qodef-st-inner">
+                                   <div class="qodef-st-inner" style="background-color: transparent;">
                                        
-                                       <span class="qodef-st-tagline" style="color:#ffffff; margin-bottom: -6px">
+                                       <span class="qodef-st-tagline" style="background-color: transparent;color:#0e0808; margin-bottom: -6px">
                                            Most Popular Attraction
                                        </span>
-                                       <h2 class="qodef-st-title" style="color: #ffffff;">
+                                       <h2 class="qodef-st-title" style="background-color: transparent;color: #080404;">
                                            Meru National Park
                                        </h2>
                                       
@@ -1350,101 +1665,113 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
     <!--  content 1 -->
 
    
-     <div style="height: auto;background-color: #777;width: 100%;" class="vc_row wpb_row vc_row-fluid vc_custom_1570616607329 vc_row-has-fill">
+     <div style="height: 100%;width: 100%;" class="vc_row wpb_row vc_row-fluid vc_custom_15706166073291 vc_row-has-fill">
                                        
 
-            <section style="background-color: transparent; width: 100%;">
+            <section style=" width: 100%;height: auto;">
 
-                   <div class="w3-row w3-container" style="margin:0">
+                   <div class="w3-row w3-container" style="margin:0;width: 100%;">
 
-                       <ul style="list-style-type: none;margin: auto;display: inline; background-color:  #777; ">
-                           <li style="padding-bottom: 10px;">
+                       <ul style="list-style-type: none;margin: auto;display: inline;  ">
+                           <li style="">
 
-                             <div style="" class="w3-half w3-container">
+                             <div style="height: auto" class="w3-half w3-container">
                                           
                                <div style="color: #eafccf;" class=" w3-padding-top">
                                              
 
-                                   <div class="slideshow-container">
+                                        <div class="slideshow-container"style="height: auto" >
 
-                                           <div class="mySlides fade">
-                                             <img src="uploads\2019\10\SGR.jpg" style="width:100%;height: 35%; ">
+                                           <div class="mySlides fade" style="max-height: 277px;">
+                                             <img src="uploads\2019\10\SGR.jpg" style="width:100%;max-height: 368px;  ">
                                              <div class="text"></div>
                                            </div>
                                            
-                                           <div class="mySlides fade">
-                                             <img src="uploads\2019\10\SGR2.jpg" style="width:100%;height: 35%;">
+                                           <div class="mySlides fade" style="max-height: 277px;">
+                                             <img src="uploads\2019\10\SGR2.jpg" style="width:100%; max-height: 368px; ">
                                              <div class="text"></div>
                                            </div>
                                            
-                                           <div class="mySlides fade">
-                                             <img src="uploads\2019\10\SGR3.jpg" style="width:100%;height: 350%;">
+                                           <div class="mySlides fade" style="max-height: 277px; ">
+                                             <img src="uploads\2019\10\SGR3.jpg" style="width:100%; max-height: 368px;">
                                              <div class="text"></div>
                                            </div>
-                                           <div class="mySlides fade">
-                                                   <img src="uploads\2019\10\SGR4.jpg" style="width:100%;height: 35%;">
-                                                   <div class="text"></div>
-                                           </div>
-                                           <div class="mySlides fade">
-                                                   <img src="uploads\2019\10\SGR5.jpg" style="width:100%;height: 35%;">
-                                                   <div class="text"></div>
-                                           </div>
-                                           <div class="mySlides fade">
-                                                   <img src="uploads\2019\10\SGR6.jpg" style="width:100%;height: 35%;">
-                                                   <div class="text"></div>
-                                           </div>
-                                           <div class="mySlides fade">
-                                                   <img src="uploads\2019\10\SGR7.jpg" style="width:100%;height: 35%;">
+
+                                           <div class="mySlides fade" style="max-height: 277px; ">
+                                                   <img src="uploads\2019\10\SGR4.jpg" style="width:100%;max-height: 368px;  ">
                                                    <div class="text"></div>
                                            </div>
 
-                                           
+                                           <div class="mySlides fade" style="max-height: 277px;">
+                                                   <img src="uploads\2019\10\SGR5.jpg" style="width:100%;max-height: 368px;">
+                                                   <div class="text"></div>
                                            </div>
-                                           <br>
-                                           
-                                           <div style="text-align:center">
-                                             <span class="dot"></span>
-                                             <span class="dot"></span>
-                                             <span class="dot"></span>
-                                             <span class="dot"></span>
-                                             <span class="dot"></span>
-                                             <span class="dot"></span>
-                                             <span class="dot"></span>
+
+                                           <div class="mySlides fade" style="max-height: 277px; ">
+                                                   <img src="uploads\2019\10\SGR6.jpg" style="width:100%;max-height: 368px;">
+                                                   <div class="text"></div>
                                            </div>
-                                           <script>
-                                                   var slideIndex = 0;
-                                                   showSlides();
-                                                   
-                                                   function showSlides() {
-                                                       var i;
-                                                       var slides = document.getElementsByClassName("mySlides");
-                                                       var dots = document.getElementsByClassName("dot");
-                                                       for (i = 0; i < slides.length; i++) {
-                                                          slides[i].style.display = "none";
-                                                       }
-                                                       slideIndex++;
-                                                       if (slideIndex> slides.length) {slideIndex = 1}
-                                                       for (i = 0; i < dots.length; i++) {
-                                                           dots[i].className = dots[i].className.replace(" active", "");
-                                                       }
-                                                       slides[slideIndex-1].style.display = "block";
-                                                       dots[slideIndex-1].className += " active";
-                                                       setTimeout(showSlides, 2000); // Change image every 2 seconds
-                                                   }
-                                           </script>
+
+                                           <div class="mySlides fade" style="max-height: 277px;">
+                                                   <img src="uploads\2019\10\SGR7.jpg" style="width:100%;max-height: 368px;">
+                                                   <div class="text"></div>
+                                           </div>
+
+                                           
+                                        </div>
+
+                                       
+                                         
                                </div>
 
+
+
+                               <br>
+                                           
+                               <div style="height: auto;text-align:center">
+                                 <span class="dot"></span>
+                                 <span class="dot"></span>
+                                 <span class="dot"></span>
+                                 <span class="dot"></span>
+                                 <span class="dot"></span>
+                                 <span class="dot"></span>
+                                 <span class="dot"></span>
+                               </div>
+                               <script>
+                                       var slideIndex = 0;
+                                       showSlides();
+                                       
+                                       function showSlides() {
+                                           var i;
+                                           var slides = document.getElementsByClassName("mySlides");
+                                           var dots = document.getElementsByClassName("dot");
+                                           for (i = 0; i < slides.length; i++) {
+                                              slides[i].style.display = "none";
+                                           }
+                                           slideIndex++;
+                                           if (slideIndex> slides.length) {slideIndex = 1}
+                                           for (i = 0; i < dots.length; i++) {
+                                               dots[i].className = dots[i].className.replace(" active", "");
+                                           }
+                                           slides[slideIndex-1].style.display = "block";
+                                           dots[slideIndex-1].className += " active";
+                                           setTimeout(showSlides, 2000); // Change image every 2 seconds
+                                       }
+                               </script>
+
                              </div>
+                             
 
                            </li>
-                           <li style="height: 100%;padding-top: 10px; vertical-align: -webkit-baseline-middle; ">
-                            <section style="height: auto;width: auto; vertical-align: -webkit-baseline-middle; ">
+                           <li style="height: auto;padding-top: 10px;">
+                           
+                            <section style="min-height: 380px; width: auto; ">
 
                                    <div style="background-color: transparent;" class="w3-half w3-container">
                                           
-                                       <div style="color: #eafccf;text-align: center;" class=" w3-padding-top">
+                                       <div style="color: #eafccf;text-align: center;min-height: 200px" class=" w3-padding-top">
                                             
-                                           <div class="slideshow-container">
+                                           <div class="slideshow-container" style="height: auto;">
 
                                                 <span class="qodef-st-tagline" style="color: #022506; margin-bottom: -6px">
                                                       <h2 style="color: #cdd4ce;">
@@ -1460,61 +1787,91 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                            </div> 
                                            
                                        </div>
+
+
+
+                                       <section style="height: auto;width: auto;text-align: center; ">
+
+           
+
+                                            <button   id="lnkAgency" class="button qodef-btt-text" style="vertical-align:middle">
+                                                <a id="" href="index.html#divAgency" class="off">
+                                                        <span class="qodef-btt-text">
+                                                            
+                                                                    <strong>Discover</strong>
+                                                                                                                                                            
+                                                        </span>
+                                                </a>
+                                            </button>
+                            
+                                        </section>
                                           
 
                                    </div>
 
 
-                            </section>                                 
+                            </section>
+                            
+                              
+                                   
+                    
+                            <script>        
+                       
+                                        $(document).ready(function () {                                                               
+                                           
+                                
+                                            $("#lnkAgency").click(function () {
+                                                                                                                                      
+                                                $("#divAgency").show();
+                                                $("#divAgency1").hide();
+                                                $("#divAgency2").hide();
+                                                $("#divAgency3").hide();
+                                                $("#divAgency4").hide();
+                                                $("#OtherActivities").hide();
+                                                
+                                            });
+                                        });
+                                
+                            </script>
+                            
+                            
 
                            </li>
-                       </ul>                                                   
-                          
+
+
                            
+                       </ul>
+
+
+                       
+                              
                            
                    </div>
+                
+                 
+                   
+                   
+
+                 
         
             </section>
-            <section style="height: auto;width: 50%;background-color:transparent;text-align: center; float:right; vertical-align: -webkit-baseline-middle; ">
-
-               
-
-                <button   id="lnkAgency" class="button qodef-btt-text" style="vertical-align:middle">
-                    <a id="" href="index.html#divAgency" class="off">
-                            <span class="qodef-btt-text">
-                                
-                                        <strong>Discover</strong>
-                                                                                                                                
-                            </span>
-                    </a>
-                </button>
-
-         </section>  
-
-            <script>        
-   
-                    $(document).ready(function () {                                                               
-                       
-            
-                        $("#lnkAgency").click(function () {
-                                                                                                                  
-                            $("#divAgency").show();
-                            $("#divAgency1").hide();
-                            $("#divAgency2").hide();
-                            $("#divAgency3").hide();
-                            $("#divAgency4").hide();
-                            $("#OtherActivities").hide();
-                            
-                        });
-                    });
-            
-            </script>
-            
            
+            
+
+              
+            
      
 
 
      </div>
+
+
+
+
+
+
+
+     
 
 
 
@@ -1540,66 +1897,6 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
 
 
-            
-            
-
-
-
-             <div class="qodef-fullscreen-search-holder">
-    
-    <a class="qodef-search-close qodef-search-close-svg-path" href="javascript:void(0)">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-            <line fill="none" x1="5.4" y1="15.6" x2="5.4" y2="15.6">
-            </line>
-            <line fill="none" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" x1="0.5" y1="0.6" x2="19.4" y2="19.4">
-            </line>
-            <line fill="none" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" x1="19.4" y1="0.6" x2="0.6" y2="19.4">
-            </line>
-        </svg>	
-    </a>
-    
-    <div class="qodef-fullscreen-search-table">
-        
-        <div class="qodef-fullscreen-search-cell">
-            
-            <div class="qodef-fullscreen-search-inner">
-                
-                <form action="https://www.bingwasafaris.co.ke/" class="qodef-fullscreen-search-form" method="get">
-                    
-                    <div class="qodef-form-holder">
-                        
-                        <div class="qodef-form-holder-inner">
-                            
-                            <div class="qodef-field-holder qodef-flp-search-field-holder" data-post-type="tour-item">
-                                
-                                <input type="text" class="qodef-search-field" placeholder="Search..." name="s" autocomplete="off">
-                                
-                                <button type="submit" class="qodef-search-submit">
-                                    Find Now
-                                </button>
-                                
-                            </div>
-                            
-                            <div class="qodef-flp-search-results">
-                            
-                            </div>
-                            
-                            <input type="hidden" id="qodef_fullscreen_search_post_types_nonce" name="qodef_fullscreen_search_post_types_nonce" value="d3e4ae55ee">
-                            <input type="hidden" name="_wp_http_referer" value="/">						
-                            
-                        </div>
-                        
-                    </div>
-                    
-                </form>
-                
-            </div>
-            
-        </div>
-        
-    </div>
-    
-             </div>              
 
 
 
@@ -1651,32 +1948,32 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
 
 
-                                     <div style="height: auto;background-color: #777;width: 100%;" class="parallax-image-1 vc_row wpb_row vc_row-fluid vc_custom_1570616607329 vc_row-has-fill">
+                                     <div style="height: auto;color: #222222; background-color: transparent;width: 100%;" class=" vc_row wpb_row vc_row-fluid vc_custom_1570616607329 vc_row-has-fill">
                                        
 
                                                 
-                                            <section style="height: auto;width: 100%; background-color: #222222 ;">
+                                            <section style="height: auto;width: 100%;color: #222222; background-color: #cdd4ce;">
                                                      
-                                                       <div  id="divAgency" style="display:none; color: #eafccf;" class=" ">
+                                                       <div  id="divAgency" style="display:none; color: #222222; background-color: #cdd4ce;" class=" ">
 
-                                                       <h2 style="color: #eafccf; text-align: center;">
+                                                       <h2 style="color: #222222; background-color: #cdd4ce; text-align: center;">
                                                             Explore Our Safaris                                                                                                                              
                                                        </h2>
-                                                       <h3 style="color: #eafccf; text-align: center;">
+                                                       <h3 style="color: #222222; background-color: #cdd4ce; text-align: center;">
                                                             Meru National Park
                                                        </h3>
 
-                                                       <table class=" ">
-                                                               <tr>
-                                                                 <th>3 Days/2 Nights</th>
+                                                       <table style="color: #222222; background-color: #cdd4ce;" class=" ">
+                                                               <tr style=" color: #222222; background-color: #cdd4ce;">
+                                                                 <th style="color: #222222; background-color: #cdd4ce">3 Days/2 Nights</th>
                                                                  
                                                                  
                                                                </tr>                                                              
                                                                
                                                       </table>
-                                                      <table class=" ">
-                                                       <tr>
-                                                         <th>Duration: 3 Days
+                                                      <table style="color: #222222; background-color: #cdd4ce;" class=" ">
+                                                       <tr style="color: #222222; background-color: #cdd4ce;">
+                                                         <th style="color: #222222; background-color: #cdd4ce">Duration: 3 Days
                                                                <br>
                                                                Destinations: 
                                                                <br>
@@ -1687,7 +1984,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                       
                                                        
                                                      </table>
-                                                     <table class=" ">
+                                                     <table style="color: #222222; background-color: #cdd4ce;" class=" ">
                                                        
                                                        <tr>
 
@@ -1696,20 +1993,20 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                        </tr> 
                                                        
                                                      </table>
-                                                      <table style="margin-top: 30px; " class="parallax-image-1 ">
-                                                           <tr> 
+                                                      <table style="margin-top: 30px;color: #222222; background-color: #cdd4ce; " class=" ">
+                                                           <tr style=" color: #222222; background-color: #cdd4ce;"> 
                                                                     
-                                                                   <th>Day 1- Nairobi to Meru National Park</th>
+                                                                   <th style="color: #222222; background-color: #cdd4ce">Day 1- Nairobi to Meru National Park</th>
                                                                    
                                                                        
                                                            </tr>
 
                                                       </table>
-                                                      <table class="parallax-image-2  " >
+                                                      <table class=" " >
                                                            <tr> 
                                                                     
-                                                                   <td style=" background-color: #444644; ">
-                                                                       <P style="color: #cdd4ce;">
+                                                                   <td style=" color: #222222; background-color: #cdd4ce; ">
+                                                                       <P style="color: #222222; background-color: #cdd4ce;">
                                                                           Early pick up from Nairobi. Drive through Mt. Kenya region to Meru National Park. Arrive at IKWETA safari camp; refreshing swim & lunch before afternoon game drive. Dinner and overnight at IKWETA Safari Camp.
  
                                                                        </P>
@@ -1719,29 +2016,29 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                            </tr>
 
                                                       </table>
-                                                      <table class="parallax-image-2  ">
+                                                      <table style="color: #222222; background-color: #cdd4ce;" class=" ">
 
-                                                           <tr> 
+                                                           <tr style=" color: #222222; background-color: #cdd4ce;"> 
                                                                     
                                                                    <th>Day 2- Meru National Park</th>
                                                                      
                                                                            
                                                            </tr> 
                                                       </table>
-                                                      <table class="parallax-image-2  ">
+                                                      <table style="color: #222222; background-color: #cdd4ce;" class=" ">
 
                                                            <tr> 
                                                                     
-                                                                   <td style="background-color: #444644; ">
-                                                                       <P style="color: #cdd4ce;">
+                                                                   <td style="color: #222222; background-color: #cdd4ce; ">
+                                                                       <P style="color: #222222; background-color: #cdd4ce;">
                                                                           Morning & afternoon game drives. Packed breakfast and/or packed lunch can be arranged. Return to IKWETA Safari Camp for swim & relaxation. Dinner and overnight at IKWETA Safari Camp.
                                                                        </P>
                                                                    </td>    
                                                                            
                                                            </tr> 
                                                       </table>
-                                                      <table class="parallax-image-2  ">
-                                                           <tr> 
+                                                      <table style="color: #222222; background-color: #cdd4ce;" class=" ">
+                                                           <tr style=" color: #222222; background-color: #cdd4ce;"> 
                                                                     
                                                                    <th>Day 3- Meru to Nairobi</th>
                                                                     
@@ -1749,11 +2046,11 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                            </tr>                                                               
                                                               
                                                       </table>
-                                                      <table class="parallax-image-2 ">
+                                                      <table style="color: #222222; background-color: #cdd4ce;" class=" ">
                                                            <tr> 
                                                                     
-                                                                   <td style="background-color: #444644;;">
-                                                                        <P style="color: #cdd4ce;">
+                                                                   <td style="color: #222222; background-color: #cdd4ce;">
+                                                                        <P style="color: #222222; background-color: #cdd4ce;">
                                                                              Early morning game drive. Return to IKWETA Safari Camp for breakfast. Check out and drive back to Nairobi arriving in the afternoon. End of tour.
                                                                         </P>
                                                                    </td>    
@@ -1761,16 +2058,16 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                            </tr>                                                               
                                                               
                                                       </table>
-                                                      <table style="margin-top: 30px; " class="parallax-image-2 ">
-                                                           <tr>
+                                                      <table style="margin-top: 30px;color: #222222; background-color: #cdd4ce; " class=" ">
+                                                           <tr style=" color: #222222; background-color: #cdd4ce;">
                                                              <th>Package Includes;</th>
                                                              <th>Package Excludes;</th>
                                                              
                                                            </tr>
                                                            <tr>
 
-                                                             <td style="color: #222222;">
-                                                               <ul style="list-style-type: none;margin: auto;display: block ; background-color: transparent">
+                                                             <td style="color: #222222; background-color: #cdd4ce;">
+                                                               <ul style="list-style-type: none;margin: auto;display: block ; color: #222222; background-color: #cdd4ce;">
                                                                    <li>
                                                                            <p> Use 4 by 4 Safari Jeep</p>
                                                                            <br>
@@ -1802,7 +2099,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                </ul>
                                                                                                                                 
                                                              </td>
-                                                             <td style="color: #222222;">
+                                                             <td style="color: #222222; background-color: #cdd4ce;">
                                                                <p>Meru National Park conservation fee; </p>
                                                                <br>
                                                                <p> Kenyan citizen KES 500;</p>
@@ -1819,9 +2116,9 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                            
                                                   </table>
 
-                                                  <section style="margin-top: 30px;background-color:  #222222; " class="">
+                                                  <section style="margin-top: 30px;color: #222222; background-color: #cdd4ce; " class="">
 
-                                                  <h3 style="color: #eafccf; text-align: center;">
+                                                  <h3 style="color: #222222; background-color: #cdd4ce; text-align: center;">
                                                        <a href="https://ikwetasafaricamp.com">
                                                            IKWETA Safari Camp  amenities;
                                                        </a>                                                       
@@ -1829,10 +2126,6 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                   <P style="padding-left: 10px;">      
                                                   	Spacious comfortable Guest Tents each with private en-suite bathroom & veranda                                                     
                                                   </P>
-                                                  <br>
-                                                  <p style="padding-left: 10px;"> 
-                                                  	Spacious comfortable Guest Tents each with private en-suite bathroom & veranda                                                     
-                                                  </p>
                                                   <br>
                                                   <p style="padding-left: 10px;"> 
                                                   	Improved accessibility for guests who are wheelchair users & for those with reduces mobility                                                    
@@ -1858,97 +2151,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                       
                                             </section>
 
-                                            <section style="height: auto;width: 100%; background-color: #5c5858 ;">
-                                                    <div id="divAbout" style="display:none; color: #eafccf;" class=" ">
- 
-                                                            <h2 style="color: #eafccf; text-align: center;font-family:Satisfy,cursive;">
-                                                                   Bingwa Safaris                                                                                                                           
-                                                               </h2>
-                                                               
-                                                               <table style="background-color: #022506;" class=" ">
-                                                                       <tr>
-                                                                         <th>   ,,,BINGWA SAFARIS LTD is a tour company which has a Swahili name meaning winner or champion,,,,                                                                                                                             
-
-                                                                                <br>  
-                                                                                BINGWA SAFARIS LTD is a registered tour company under the Kenyan constitution companies act .2015, where you can't hesitate booking with us and experience our services,, and in all our safaris we use 4*4 vehicles in order to get the best moments in the fields,,,
-                                                                            
-                                                                            
-                                                                         </th>
-                                                                         
-                                                                                
-                                                                         
-                                                                         
-                                                                         
-                                                                       </tr>                                                              
-                                                                       
-                                                               </table>
-                                                               <table class=" ">
-                                                                    <br>,,,we have come up with a package for the locals,,
-                                                                    MERU NATIONAL PARK ,,,
-                                                                    <br>
-                                                       
-                                                                    <tr>
-             
-                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
-                                                                         <strong>300ksh</strong>
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
-                                                                            <strong>1,</strong> transport in a tour van
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
-                                                                            <strong>2,</strong> lunch of your choice at One Africa resort,,
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
-                                                                            <strong>3,</strong> two bottles of water
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
-                                                                            <strong>4,</strong> park fee
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
-                                                                            <strong>5,</strong> photography
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
-                                                                            <strong>6,</strong> team building
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
-                                                                            <strong>7,</strong> hiking
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
-                                                                            <strong>8,</strong> guiding is provided.
-                                                                      </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                      <td style="color: #222222; background-color: #cdd4ce; ">
-                                                                            <strong>9</strong> ,, children below five years is free,,, but this package applies to those in MERU TOWN and MAUA TOWN,,
-                                                                      </td>
-                                                                     
-                                                                    </tr> 
-                                                                    
-                                                               </table>
-
-                                                               <p style="font-style: oblique;">
-                                                                    And we now have the option of LIPA POLE POLE FOR YOUR TRIP ,,, this are daily trips
-                                                               </p>
-
-                                                       </div>
-                                            </section>
-                                     
+                                           
                   
                    
                                      </div>
@@ -1974,7 +2177,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                             
                                             <div class="qodef-st-inner">
                                                 
-                                                <span class="qodef-st-tagline" style="color:#022506; margin-bottom: -6px">
+                                                <span class="qodef-st-tagline" style="color: #ffffff;">
                                                     Discover a different world with our Nature Walks & Trail
                                                 </span>
                                                 <h2 class="qodef-st-title" style="color: #ffffff">
@@ -2009,14 +2212,19 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                      </div>
 
 
+
+
+
+
+
                                      
                                    
 
                   
-                                     <div class="vc_row wpb_row vc_row-fluid vc_custom_1570786411823">
+                                     <div style=" background-color: #ffffff;" class="vc_row wpb_row vc_row-fluid vc_custom_15707864118231">
                      
-                                        <section style="background-color: #777; width: 100%;">
-                                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <section style="background-color: transparent; width: 100%;">
+                                                <div class="wpb_column vc_column_container vc_col-sm-12" style="width">
                         
                                                         <div class="vc_column-inner">
                                                             
@@ -2042,295 +2250,307 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                                                     
                                                                     <div class="qodef-tours-list-holder-inner qodef-tours-row-inner-holder qodef-outer-space" style="opacity: 1; position: relative; height: 235.641px;">
                                                                         
+                                                                       
+                                                                       
+                                                                       
+                                                                       
                                                                         <div class="qodef-tours-list-grid-sizer">
                                                                         </div>
-                                
-                                                                        
-                                                                        
-                                                                        <div class="qodef-tours-gallery-item qodef-tours-row-item qodef-item-space qodef-tour-item-no-rating post-5408 tour-item type-tour-item status-publish has-post-thumbnail hentry tour-category-christmas tour-category-featured" style="position: absolute; left: 0%; top: 0px;">
-                                                                            
-                                                                                <div style="text-align: center;;width: auto;height: auto;">
-                                                                            
-                                                                                        <button    class="button2 qodef-btt-text" style="vertical-align:middle">
-                                                                                            <a id=""class="off" style="font-family:Satisfy,cursive;">
-                                                                                                             
-                                                                                                                    IKWETA Safari Camp Nature Trail
 
-                                                                                            </a>
-                                                                                        </button>
-            
-                                                                                </div>
-                                                                           
-                                                                            <div class="qodef-tours-gallery-item-image-holder">
-                                                                                
-                                                                                <div class="qodef-tours-gallery-item-image">
-                                                                                    
-                                                                                    <img width="850" height="566" src="uploads/2019/10/IMG-20191104-WA0008.jpg" class="attachment-full size-full" alt="" 
-                                                                                    srcset="uploads/2019/10/IMG-20191104-WA0008.jpg 850w,
-                                                                                    uploads/2019/10/IMG-20191104-WA0008.jpg 300w,
-                                                                                    uploads/2019/10/IMG-20191104-WA0008.jpg 768w" sizes="(max-width: 850px) 100vw, 850px">
-                                                                                    
-                                                                                    <div class="qodef-tours-gallery-item-content-holder" style="transform: translate3d(0px, 0px, 0px);">
-                                                                                        
-                                                                                        <div class="qodef-tours-gallery-item-content-inner">
-                                                                                            
-                                                                                            <div class="qodef-tours-gallery-title-holder">
-                                                                                                
-                                                                                                <h4 class="qodef-tour-title">
-                                                                                                        Cost: Free
-                                                                                                       
-                                                                                                    
-                                                                                                </h4>
-                                                                                                <span class="qodef-tours-gallery-item-price-holder">
-                                                                                                    <span class="qodef-tours-price-holder">
-                                                                                                       
-                                                                                                    </span>
-                                                                                                </span>
-                                                                                                
-                                                                                            </div>
-                                                                                            
-                                                                                            
-                                                                                        </div>
-                                                                                        
-                                                                                    </div>
-                                                                                    
-                                                                                </div>
+
+
+                                                                       
+
+
+                                                                        <ul class=" "  style="padding-left: 80px;background-color: transparent; margin:auto;color: #222222; float: right; height: auto;width: 100%; ">
                                                                                
-                                                                                
-                                                                               
-                                                                                
-                                                                            </div>
-                                                                            <div style="text-align: center;;width: auto;height: auto;">
                                                                             
-                                                                                    <button   id="lnkAgency1" class="button qodef-btt-text" style="vertical-align:middle">
-                                                                                        <a id="" href="index.html#divAgency1" class="off">
-                                                                                                <span class="qodef-btt-text">
-                                                                                                    
-                                                                                                            <strong>Discover</strong>
-                                                                                                                                                                                                    
-                                                                                                </span>
-                                                                                        </a>
-                                                                                    </button>
+                                                                            
+                                                                                <li style="max-width: 318px;padding: 10px;" class="li nav-ul-li nav-ul-li-bl dropdown">
+                                                                                        <div id="naturewalk" style="text-align: center;;width: auto;height: 100px;">
+                                                                            
+                                                                                                <button    class="button2 qodef-btt-text" style="vertical-align:middle">
+                                                                                                    <a id=""class="off" style="color: #222222;font-family:Satisfy,cursive;">
+                                                                                                                     
+                                                                                                                            IKWETA Safari Camp Nature Trail
         
-                                                                            </div>
-                                                                            
-                                                                        </div>
-                                                                        
-                                                                        <div class="qodef-tours-gallery-item qodef-tours-row-item qodef-item-space qodef-tour-item-no-rating post-5413 tour-item type-tour-item status-publish has-post-thumbnail hentry tour-category-featured tour-category-group_joining" style="position: absolute; left: 33.3005%; top: 0px;">
-                                                                            
-                                                                            
-                                                                                <div style="text-align: center;;width: auto;height: auto;">
-                                                                            
-                                                                                        <button    class="button2 qodef-btt-text" style="vertical-align:middle">
-                                                                                            <a id=""class="off" style="font-family:Satisfy,cursive;">
-                                                                                                          
-                                                                                                                    Gatwe (“Skull”) Hill Nature Walk
-                                                                                                        
-                                                                                            </a>
-                                                                                        </button>
-            
-                                                                                </div>
-                                                                            
-                                                                            <div class="qodef-tours-gallery-item-image-holder">
-                                                                                
-                                                                                <div class="qodef-tours-gallery-item-image">
-                                                                                    
-                                                                                    <img width="1024" height="683" src="uploads/2019/10/3-Days-Kenya-Masai-Mara-Safari-from-Kisumu4-1024x683.jpg" class="attachment-full size-full" alt="" 
-                                                                                    srcset="uploads/2019/10/3-Days-Kenya-Masai-Mara-Safari-from-Kisumu4-1024x683.jpg 1024w,
-                                                                                    uploads/2019/10/3-Days-Kenya-Masai-Mara-Safari-from-Kisumu4-1024x683-300x200.jpg 300w,
-                                                                                    uploads/2019/10/3-Days-Kenya-Masai-Mara-Safari-from-Kisumu4-1024x683-768x512.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px">
-                                                                                    
-                                                                                    <div class="qodef-tours-gallery-item-content-holder" style="transform: translate3d(0px, 0px, 0px);">
-                                                                                        
-                                                                                        <div class="qodef-tours-gallery-item-content-inner">
-                                                                                            
-                                                                                            <div class="qodef-tours-gallery-title-holder">
-                                                                                                
-                                                                                                <h4 class="qodef-tour-title">
-                                                                                                        Cost: KES 500 for 4 pax; KES 100 for each additional pax.
-                                                                                                </h4>
-                                                                                                <span class="qodef-tours-gallery-item-price-holder">
-                                                                                                    <span class="qodef-tours-price-holder">
-                                                                                                        <span class="qodef-tours-item-price ">
-                                                                                                         
-                                                                                                        </span>
-                                                                                                    </span>
-                                                                                                </span>
-                                                                                                
-                                                                                            </div>
-                                                                                            
-                                                                                        </div>
-                                                                                        
-                                                                                    </div>
-                                                                                    
-                                                                                </div>
-                                                                                
-                                                                                
-                                                                            
-                                                                                
-                                                                            </div>
-                                
-                                                                            <div style="text-align: center;;width: auto;height: auto;">
-                                                                            
-                                                                                    <button   id="lnkAgency2" class="button qodef-btt-text" style="vertical-align:middle">
-                                                                                        <a id="" href="index.html#divAgency2" class="off">
-                                                                                                <span class="qodef-btt-text">
-                                                                                                    
-                                                                                                            <strong>Discover</strong>
-                                                                                                                                                                                                    
-                                                                                                </span>
-                                                                                        </a>
-                                                                                    </button>
-        
-                                                                            </div>
-                                                                            
-                                                                        </div>
-                                                                        
-                                                                        <div class="qodef-tours-gallery-item qodef-tours-row-item qodef-item-space qodef-tour-item-no-rating post-5415 tour-item type-tour-item status-publish has-post-thumbnail hentry tour-category-featured tour-category-sgr_flying" style="position: absolute; left: 66.601%; top: 0px;">
-                                                                            
-                                                                            
-                                                                                <div style="text-align: center;;width: auto;height: auto;">
-                                                                            
-                                                                                        <button    class="button2 qodef-btt-text" style="vertical-align:middle">
-                                                                                            <a id=""class="off" style="font-family:Satisfy,cursive;">
-                                                                                                               
-                                                                                                                    Nyambene Forest & Water Tower Nature Walk
-                                                                                                          
-                                                                                            </a>
-                                                                                        </button>
-            
-                                                                                </div>
-                                                                            
-                                                                            <div class="qodef-tours-gallery-item-image-holder">
-                                                                                
-                                                                                <div class="qodef-tours-gallery-item-image">
-                                                                                    
-                                                                                    <img width="1024" height="683" src="uploads/2019/10/IMG-20191104-WA0011.jpg" class="attachment-full size-full" alt="" 
-                                                                                    srcset="uploads/2019/10/IMG-20191104-WA0011.jpg 1024w,
-                                                                                    uploads/2019/10/IMG-20191104-WA0011.jpg 300w,
-                                                                                    uploads/2019/10/IMG-20191104-WA0011.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px">
-                                                                                    
-                                                                                    <div class="qodef-tours-gallery-item-content-holder" style="transform: translate3d(0px, 0px, 0px);">
-                                                                                        
-                                                                                        <div class="qodef-tours-gallery-item-content-inner">
-                                                                                            
-                                                                                            <div class="qodef-tours-gallery-title-holder">
-                                                                                                
-                                                                                                <h4 class="qodef-tour-title">
-                                                                                                        Cost: KES 3,000 for entry into the forest & guide
-                                                                                                </h4>
-                                                                                                <span class="qodef-tours-gallery-item-price-holder">
-                                                                                                    <span class="qodef-tours-price-holder">
-                                                                                                        <span class="qodef-tours-item-price ">
-                                                                                                          
-                                                                                                        </span>
-                                                                                                    </span>
-                                                                                                </span>
-                                                                                                
-                                                                                            </div>
-                                                                                            
-                                                                                        </div>
-                                                                                        
-                                                                                    </div>
-                                                                                    
-                                                                                </div>
-                                                                               
-                                                                              
-                                                                            </div>
-                                
-                                                                            <div style="text-align: center;;width: auto;height: auto;">
-                                                                            
-                                                                                    <button   id="lnkAgency3" class="button qodef-btt-text" style="vertical-align:middle">
-                                                                                        <a id="" href="index.html#divAgency3" class="off">
-                                                                                                <span class="qodef-btt-text">
-                                                                                                    
-                                                                                                            <strong>Discover</strong>
-                                                                                                                                                                                                    
-                                                                                                </span>
-                                                                                        </a>
-                                                                                    </button>
-        
-                                                                            </div>
-                                                                            
-                                                                        </div>
-                                
-                                                                        <div class="qodef-tours-gallery-item qodef-tours-row-item qodef-item-space qodef-tour-item-no-rating post-5415 tour-item type-tour-item status-publish has-post-thumbnail hentry tour-category-featured tour-category-sgr_flying" style="position: absolute; left: 66.601%; top: 0px;">
-                                                                            
-                                                                            
-                                                                                <div style="text-align: center;;width: auto;height: auto;">
-                                                                            
-                                                                                        <button    class="button2 qodef-btt-text" style="vertical-align:middle">
-                                                                                            <a id=""class="off" style="font-family:Satisfy,cursive;">
-                                                                                                              Magado [Igombe] Crater – Nyambene National Reserve
-                                                                                                                    Nature Walk
-                                                                                                                    
-                                                                                                            </span>
                                                                                                     </a>
-                                                                                                  
-                                                                                            </a>
-                                                                                        </button>
-            
-                                                                                </div>
-                                                                            
-                                                                            
-                                                                            <div class="qodef-tours-gallery-item-image-holder">
-                                                                                
-                                                                                <div class="qodef-tours-gallery-item-image">
-                                                                                    
-                                                                                    <img width="1024" height="683" src="uploads/2019/10/IMG-20191104-WA0011.jpg" class="attachment-full size-full" alt="" 
-                                                                                    srcset="uploads/2019/10/IMG-20191104-WA0011.jpg 1024w,
-                                                                                    uploads/2019/10/IMG-20191104-WA0011.jpg 300w,
-                                                                                    uploads/2019/10/IMG-20191104-WA0011.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px">
-                                                                                    
-                                                                                    <div class="qodef-tours-gallery-item-content-holder" style="transform: translate3d(0px, 0px, 0px);">
+                                                                                                </button>
+                    
+                                                                                            </div>
+                                                                                   
+                                                                                    <div class="qodef-tours-gallery-item-image-holder">
                                                                                         
-                                                                                        <div class="qodef-tours-gallery-item-content-inner">
+                                                                                        <div class="qodef-tours-gallery-item-image">
                                                                                             
-                                                                                            <div class="qodef-tours-gallery-title-holder">
+                                                                                            <img width="850" height="566" src="uploads/2019/10/IMG-20191104-WA0008.jpg" class="attachment-full size-full" alt="" 
+                                                                                            srcset="uploads/2019/10/IMG-20191104-WA0008.jpg 850w,
+                                                                                            uploads/2019/10/IMG-20191104-WA0008.jpg 300w,
+                                                                                            uploads/2019/10/IMG-20191104-WA0008.jpg 768w" sizes="(max-width: 850px) 100vw, 850px">
+                                                                                            
+                                                                                            <div class="qodef-tours-gallery-item-content-holder" style="transform: translate3d(0px, 0px, 0px);">
                                                                                                 
-                                                                                                <h4 class="qodef-tour-title">
-                                                                                                        Cost: KES 3,000 Full-day Excursion
-                                                                                                </h4>
-                                                                                                <span class="qodef-tours-gallery-item-price-holder">
-                                                                                                    <span class="qodef-tours-price-holder">
-                                                                                                        <span class="qodef-tours-item-price ">
-                                                                                                         
+                                                                                                <div class="qodef-tours-gallery-item-content-inner">
+                                                                                                    
+                                                                                                    <div class="qodef-tours-gallery-title-holder">
+                                                                                                        
+                                                                                                        <h4 style="color: #222222;" class="qodef-tour-title">
+                                                                                                                Cost: Free
+                                                                                                               
+                                                                                                            
+                                                                                                        </h4>
+                                                                                                        <span class="qodef-tours-gallery-item-price-holder">
+                                                                                                            <span class="qodef-tours-price-holder">
+                                                                                                               
+                                                                                                            </span>
                                                                                                         </span>
-                                                                                                    </span>
-                                                                                                </span>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    
+                                                                                                    
+                                                                                                </div>
+                                                                                                
+                                                                                            </div>
+                                                                                            
+                                                                                        </div>                                                                               
+                                                                                        
+                                                                                    </div>
+        
+                                                                                    <div style="text-align: center;;width: auto;height: auto;">
+                                                                                    
+                                                                                            <button   id="lnkAgency1" class="button qodef-btt-text" style="vertical-align:middle">
+                                                                                                <a id="" href="index.html#divAgency1" class="off">
+                                                                                                        <span class="qodef-btt-text">
+                                                                                                            
+                                                                                                                    <strong>Discover</strong>
+                                                                                                                                                                                                            
+                                                                                                        </span>
+                                                                                                </a>
+                                                                                            </button>
+                
+                                                                                    </div>
+                                                                                       
+                                                                                </li>                                                                                    
+                                                                                
+                                                                                  
+                                                                                <li style="max-width: 318px;padding: 10px;" class="li nav-ul-li nav-ul-li-bl dropdown">
+                                                                                        <div style="text-align: center;;width: auto;height: 100px;">
+                                                                            
+                                                                                                <button    class="button2 qodef-btt-text" style="vertical-align:middle">
+                                                                                                    <a id=""class="off" style="color: #222222;font-family:Satisfy,cursive;">
+                                                                                                                       
+                                                                                                                            Nyambene Forest & Water Tower Nature Walk
+                                                                                                                  
+                                                                                                    </a>
+                                                                                                </button>
+                    
+                                                                                            </div>
+                                                                                    
+                                                                                    <div class="qodef-tours-gallery-item-image-holder">
+                                                                                        
+                                                                                        <div class="qodef-tours-gallery-item-image">
+                                                                                            
+                                                                                            <img width="1024" height="683" src="uploads/2019/10/IMG-20191104-WA0011.jpg" class="attachment-full size-full" alt="" 
+                                                                                            srcset="uploads/2019/10/IMG-20191104-WA0011.jpg 1024w,
+                                                                                            uploads/2019/10/IMG-20191104-WA0011.jpg 300w,
+                                                                                            uploads/2019/10/IMG-20191104-WA0011.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px">
+                                                                                            
+                                                                                            <div class="qodef-tours-gallery-item-content-holder" style="transform: translate3d(0px, 0px, 0px);">
+                                                                                                
+                                                                                                <div class="qodef-tours-gallery-item-content-inner">
+                                                                                                    
+                                                                                                    <div class="qodef-tours-gallery-title-holder">
+                                                                                                        
+                                                                                                        <h4 style="color: #222222;" class="qodef-tour-title">
+                                                                                                                Cost: KES 3,000 for entry into the forest & guide
+                                                                                                        </h4>
+                                                                                                        <span class="qodef-tours-gallery-item-price-holder">
+                                                                                                            <span class="qodef-tours-price-holder">
+                                                                                                                <span class="qodef-tours-item-price ">
+                                                                                                                  
+                                                                                                                </span>
+                                                                                                            </span>
+                                                                                                        </span>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    
+                                                                                                </div>
                                                                                                 
                                                                                             </div>
                                                                                             
                                                                                         </div>
+                                                                                       
+                                                                                      
+                                                                                    </div>
+                                        
+                                                                                    <div style="text-align: center;;width: auto;height: auto;">
+                                                                                    
+                                                                                            <button   id="lnkAgency3" class="button qodef-btt-text" style="vertical-align:middle">
+                                                                                                <a id="" href="index.html#divAgency3" class="off">
+                                                                                                        <span class="qodef-btt-text">
+                                                                                                            
+                                                                                                                    <strong>Discover</strong>
+                                                                                                                                                                                                            
+                                                                                                        </span>
+                                                                                                </a>
+                                                                                            </button>
+                
+                                                                                    </div>                                                                                
+                                                                                
+                                                                                        
+                                                                                </li>
+                                                                                
+                                                                                
+                                                                                <li style="max-width: 318px;padding: 10px;" class="li nav-ul-li nav-ul-li-bl dropdown">
+                                                                                        <div id="excursion" style="text-align: center;;width: auto;height: 100px;">
+                                                                            
+                                                                                                <button    class="button2 qodef-btt-text" style="vertical-align:middle">
+                                                                                                    <a id=""class="off" style="color: #222222;font-family:Satisfy,cursive;">
+                                                                                                                      Magado [Igombe] Crater – Nyambene National Reserve
+                                                                                                                            Nature Walk
+                                                                                                                            
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                          
+                                                                                                    </a>
+                                                                                                </button>
+                    
+                                                                                            </div>                                                                            
+                                                                                    
+                                                                                    <div class="qodef-tours-gallery-item-image-holder">
+                                                                                        
+                                                                                        <div class="qodef-tours-gallery-item-image">
+                                                                                            
+                                                                                            <img width="1024" height="683" src="uploads/2019/10/IMG-20191104-WA00111.jpg" class="attachment-full size-full" alt="" 
+                                                                                            srcset="uploads/2019/10/IMG-20191104-WA00111.jpg 1024w,
+                                                                                            uploads/2019/10/IMG-20191104-WA00111.jpg 300w,
+                                                                                            uploads/2019/10/IMG-20191104-WA00111.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px">
+                                                                                            
+                                                                                            <div class="qodef-tours-gallery-item-content-holder" style="transform: translate3d(0px, 0px, 0px);">
+                                                                                                
+                                                                                                <div class="qodef-tours-gallery-item-content-inner">
+                                                                                                    
+                                                                                                    <div class="qodef-tours-gallery-title-holder">
+                                                                                                        
+                                                                                                        <h4 style="color: #222222;" class="qodef-tour-title">
+                                                                                                                Cost: KES 3,000 Full-day Excursion
+                                                                                                        </h4>
+                                                                                                        <span class="qodef-tours-gallery-item-price-holder">
+                                                                                                            <span class="qodef-tours-price-holder">
+                                                                                                                <span class="qodef-tours-item-price ">
+                                                                                                                 
+                                                                                                                </span>
+                                                                                                            </span>
+                                                                                                        </span>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    
+                                                                                                </div>
+                                                                                                
+                                                                                            </div>
+                                                                                            
+                                                                                        </div>                                                                               
                                                                                         
                                                                                     </div>
+                                        
+                                                                                    <div style="text-align: center;;width: auto;height: auto;">
                                                                                     
-                                                                                </div>
+                                                                                            <button   id="lnkAgency4" class="button qodef-btt-text" style="vertical-align:middle">
+                                                                                                <a id="" href="index.html#divAgency4" class="off">
+                                                                                                        <span class="qodef-btt-text">
+                                                                                                            
+                                                                                                                    <strong>Discover</strong>
+                                                                                                                                                                                                            
+                                                                                                        </span>
+                                                                                                </a>
+                                                                                            </button>
+                
+                                                                                    </div>                                                                             
                                                                                
                                                                                 
-                                                                            </div>
-                                
-                                                                            <div style="text-align: center;;width: auto;height: auto;">
-                                                                            
-                                                                                    <button   id="lnkAgency4" class="button qodef-btt-text" style="vertical-align:middle">
-                                                                                        <a id="" href="index.html#divAgency4" class="off">
-                                                                                                <span class="qodef-btt-text">
+                                                                                </li>
+
+                                                                                
+                                                                                <li style="max-width: 318px;padding: 10px;" class="li nav-ul-li nav-ul-li-bl dropdown">
+                                                                                        <div style="text-align: center;;width: auto;height: 100px;">
+                                                                        
+                                                                                                <button    class="button2 qodef-btt-text" style="vertical-align:middle">
+                                                                                                    <a id=""class="off" style="color: #222222;font-family:Satisfy,cursive;">
+                                                                                                        Gatwe (“Skull”) Hill Nature Walk       
+                                                                                                                    </span>
+                                                                                                            </a>
+                                                                                                          
+                                                                                                    </a>
+                                                                                                </button>
+                    
+                                                                                            </div>
+                                                                                    
+                                                                                    
+                                                                                    <div class="qodef-tours-gallery-item-image-holder">
+                                                                                        
+                                                                                        <div class="qodef-tours-gallery-item-image">
+                                                                                            
+                                                                                            <img width="1024" height="683" src="uploads/2019/10/IMG-20191104-WA001111.jpg" class="attachment-full size-full" alt="" 
+                                                                                            srcset="uploads/2019/10/IMG-20191104-WA001111.jpg 1024w,
+                                                                                            uploads/2019/10/IMG-20191104-WA001111.jpg 300w,
+                                                                                            uploads/2019/10/IMG-20191104-WA001111.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px">
+                                                                                            
+                                                                                            <div class="qodef-tours-gallery-item-content-holder" style="transform: translate3d(0px, 0px, 0px);">
+                                                                                                
+                                                                                                <div class="qodef-tours-gallery-item-content-inner">
                                                                                                     
-                                                                                                            <strong>Discover</strong>
-                                                                                                                                                                                                    
-                                                                                                </span>
-                                                                                        </a>
-                                                                                    </button>
-        
-                                                                            </div>
-                                                                            
-                                                                        </div>
+                                                                                                    <div class="qodef-tours-gallery-title-holder">
+                                                                                                        
+                                                                                                        <h4 style="color: #222222;" class="qodef-tour-title">
+                                                                                                            Cost: KES 500 for 4 pax; KES 100 for each additional pax.
+                                                                                                        </h4>
+                                                                                                        <span class="qodef-tours-gallery-item-price-holder">
+                                                                                                            <span class="qodef-tours-price-holder">
+                                                                                                                <span class="qodef-tours-item-price ">
+                                                                                                                 
+                                                                                                                </span>
+                                                                                                            </span>
+                                                                                                        </span>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                    
+                                                                                                </div>
+                                                                                                
+                                                                                            </div>
+                                                                                            
+                                                                                        </div>
+                                                                                       
+                                                                                        
+                                                                                    </div>
+                                        
+                                                                                    <div style="text-align: center;;width: auto;height: auto;">
+                                                                                    
+                                                                                            <button   id="lnkAgency2" class="button qodef-btt-text" style="vertical-align:middle">
+                                                                                                <a id="" href="index.html#divAgency2" class="off">
+                                                                                                        <span class="qodef-btt-text">
+                                                                                                            
+                                                                                                                    <strong>Discover</strong>
+                                                                                                                                                                                                            
+                                                                                                        </span>
+                                                                                                </a>
+                                                                                            </button>
+                
+                                                                                    </div>
+                                                                                </li>
+                                                                                
+                                                                               
+                                                                        </ul>
+                                                                       
+
+
                                 
                                 
                                                                        
                                                               
                                                                         
                                                                     </div>
+
+                                                                    
                                                                     
                                                                 </div>
                                                                 
@@ -2648,7 +2868,7 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                     
                                      <div class="qodef-row-grid-section-wrapper qodef-content-aligment-center">
                            
-                            <div class="qodef-row-grid-section">
+                                       <div class="qodef-row-grid-section">
                               
                                 <div class="vc_row wpb_row vc_row-fluid">
                                   
@@ -2656,16 +2876,21 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                         
                                         <div class="vc_column-inner vc_custom_1570785241924"><div class="wpb_wrapper"><div class="qodef-section-title-holder ">
 <div class="qodef-st-inner">
-    <span class="qodef-st-tagline" style="color: #022506; margin-bottom: -6px">
+    <span class="qodef-st-tagline" style="color: #ffffff; margin-bottom: -6px">
 Choose Your			</span>
-            <h2 class="qodef-st-title">
+            <h2 style="color: #ffffff;" class="qodef-st-title">
 Destinations in Kenya!			</h2>
             <p class="qodef-st-text" style="color: #f5eeee; font-size: 17px;line-height: 28px">
 Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as your partner.			</p>
 </div>
                                 </div><div class="vc_empty_space" style="height: 25px"><span class="vc_empty_space_inner"></span></div>
-                                  </div></div></div></div></div>
-                                     </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                       </div>
+                                     
+                                    </div>
 
 
 
@@ -3455,6 +3680,96 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                  </div> <!-- close div.content_inner -->
      
      
+                 <section style="height: auto;width: 100%; background-color: #5c5858 ;">
+                    <div id="divAbout" style="display:none; color: #eafccf;" class=" ">
+
+                            <h2 style="color: #eafccf; text-align: center;font-family:Satisfy,cursive;">
+                                   Bingwa Safaris                                                                                                                           
+                               </h2>
+                               
+                               <table style="background-color: #022506;" class=" ">
+                                       <tr>
+                                         <th>   ,,,BINGWA SAFARIS LTD is a tour company which has a Swahili name meaning winner or champion,,,,                                                                                                                             
+
+                                                <br>  
+                                                BINGWA SAFARIS LTD is a registered tour company under the Kenyan constitution companies act .2015, where you can't hesitate booking with us and experience our services,, and in all our safaris we use 4*4 vehicles in order to get the best moments in the fields,,,
+                                            
+                                            
+                                         </th>
+                                         
+                                                
+                                         
+                                         
+                                         
+                                       </tr>                                                              
+                                       
+                               </table>
+                               <table class=" ">
+                                    <br>,,,we have come up with a package for the locals,,
+                                    MERU NATIONAL PARK ,,,
+                                    <br>
+                       
+                                    <tr>
+
+                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                         <strong>300ksh</strong>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                            <strong>1,</strong> transport in a tour van
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                            <strong>2,</strong> lunch of your choice at One Africa resort,,
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                            <strong>3,</strong> two bottles of water
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                            <strong>4,</strong> park fee
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                            <strong>5,</strong> photography
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                            <strong>6,</strong> team building
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                            <strong>7,</strong> hiking
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                            <strong>8,</strong> guiding is provided.
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="color: #222222; background-color: #cdd4ce; ">
+                                            <strong>9</strong> ,, children below five years is free,,, but this package applies to those in MERU TOWN and MAUA TOWN,,
+                                      </td>
+                                     
+                                    </tr> 
+                                    
+                               </table>
+
+                               <p style="font-style: oblique;">
+                                    And we now have the option of LIPA POLE POLE FOR YOUR TRIP ,,, this are daily trips
+                               </p>
+
+                       </div>
+            </section>
      
              </div> <!-- close div.content -->
 
