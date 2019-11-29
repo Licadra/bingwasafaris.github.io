@@ -4051,7 +4051,7 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                                     </tr>
                                     <tr>
                                       <td style="color: #222222; background-color: #cdd4ce; ">
-                                            <strong>9</strong> ,, children below three years is free,,, but this package applies to those in MERU TOWN and MAUA TOWN,,
+                                            <strong>9</strong> ,, children below 3 years is free,,, but this package applies to those in MERU TOWN and MAUA TOWN,,
                                       </td>
                                      
                                     </tr> 
@@ -4171,9 +4171,9 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                    <div class="w3-half w3-container">
 
                         <h2><strong>Email Us</strong></h2>
-                          Name: <input type="text" name="name">
+                          Name: <input id="name" type="text" name="name">
                           <br>
-                          E-mail: <input type="text" name="email">
+                          E-mail: <input id="email" type="text" name="email">
                           
                       
                        
@@ -4182,15 +4182,15 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                    <div class="w3-half w3-container">
 
                         <br>
-                          Subject <input type="text" name="subject">
+                          Subject <input id="subject" type="text" name="subject">
                           <br>
                           Message <textarea name="comment" rows="4" cols="40"></textarea>
                           <br><br>
                         
                         <div style="width: auto;height: auto;">
                                                                                     
-                                <button   id="" class="button qodef-btt-text" style="">
-                                        <a id=""type="submit" href="mailto:bingwasafarisltd@gmail.com" class="off">
+                                <button type="button"  id="" onclick="myFunctionValidate()" class="button qodef-btt-text" style="">
+                                        <a id="submit" type="submit"  class="off">
                                                 <span class="qodef-btt-text">
                                                     
                                                             <strong style="font-size: smaller;">Submit</strong>
@@ -4200,6 +4200,37 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                                 </button>
 
                         </div>
+                        <script>
+                                function myFunctionValidate() {
+                                    var name, email, subject;
+                                
+                                    // Get the value of the input field with id="numb"
+                                    
+                                    email = document.getElementById("email").value;
+                                    name = document.getElementById("name").value;
+                                    subject = document.getElementById("subject").value;
+
+                                     if (email == null || email == "") {
+                                     alert("email must be filled out");
+                                     
+                                     return false; 
+                                       }
+                                       
+                                     if (subject == null || subject == "") {
+                                     alert("subject must be filled out");
+                                     
+                                      return false;       
+                                       }
+                                        document.getElementById('submit').href='mailto:bingwasafarisltd@gmail.com'
+                                      
+                                
+                                      
+                                  
+                               
+                                }
+                               
+                                </script>
+                        
                            
                                                    
                          <!-- <input href="" type="submit" name="submit" value="Submit">  -->
@@ -4211,31 +4242,146 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                 </form>
 
            </div>
+           <hr>
+           <div  style="padding: 50px;" class="w3-container">
+            
+
+           <h4>Leave a Comment:</h4>
+           <form class="w3-half w3-container" role="form">
+             <div class="w3-container form-group" style="padding-bottom: 10px;">
+                 Name: <input id="comment1" type="text" name="comment1" required>
+                <br>
+                 Comment: <input id="comment" type="text" name="comment" required>
+
+             </div>
+            
+
+             <button class="qodef-btt-text" type="button" onclick="myFunction()">comment</button>
+             
+            
+             
+             <script>
+             function myFunction() {
+                 var x, text;
+             
+                 // Get the value of the input field with id="numb"
+                 
+                 x = document.getElementById("comment").value;
+                 x1 = document.getElementById("comment1").value;
+                 var y = document.getElementById("comment1").value;
+                    if (y == null || y == "") {
+                  alert("Name must be filled out");
+                 return false;
+                }
+
+             
+                 
+                 document.getElementById("democomment").innerHTML = x;
+                 document.getElementById("democomment1").innerHTML = x1;
+                 document.getElementById("demotime").innerHTML = Date();
+                 document.getElementById('myImg').src='uploads/2019/10/img_avatar3.png'
+               
+            
+             }
+            
+             </script>
+             
+
+            
+             
+           </form>
+
+           
+
+
+
+
+           </div>
+     
 
            <hr>
+           <form name="myForm" action="demo_form.asp" onsubmit="return myFunction()" method="post">
 
            <div  style="padding: 50px;" class="w3-container">
              <h5 style="color: #020202;">Recent Comments</h5>
-             <div class="w3-row">
-               <div class="w3-col m2 text-center">
-                 <img class="w3-circle" src="uploads\2019\10\img_avatar3.png" style="width:96px;height:96px">
-               </div>
-               <div id="reviews" class="w3-col m10 w3-container">
-                 <h4>John <span class="w3-opacity w3-medium">Sep 29, 2014, 9:12 PM</span></h4>
-                 <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
-               </div>
-             </div>
+
+
+                   <div class="w3-content w3-section" style="">
+
+                        <div class="w3-row mySlides1 w3-animate-left">
+                                <div class="w3-col m2 text-center">
+                                  <img id="myImg" class="w3-circle"  style="width:96px;height:96px">
+                                </div>
+                                <div id="reviews" class="w3-col m10 w3-container">
+                                    
+                 
+                                 <h4><p  id="democomment1"></p> <span id="demotime" class="w3-opacity w3-medium"></span></h4>
+                 
+                 
+                                  <p id="democomment"></p><br>
+                                </div>
+                              </div>
+
+
+                    <div class="w3-row mySlides1 w3-animate-left" >
+                            <div class="w3-col m2 text-center">
+                              <img class="w3-circle" src="uploads\2019\10\img_avatar3.png" style="width:96px;height:96px">
+                            </div>
+                            <div class="w3-col m10 w3-container">
+                              <h4><p>John</p> <span class="w3-opacity w3-medium">Tu Nov 12 2019 10:16:41 GMT+0300 (E. Africa Standard Time)</span></h4>
+                              <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+                            </div>
+                          </div>
+
+
+
+                    <div class="w3-row mySlides1 w3-animate-left">
+                            <div class="w3-col m2 text-center">
+                              <img class="w3-circle" src="uploads\2019\10\img_avatar1.png" style="width:96px;height:96px">
+                            </div>
+                            <div class="w3-col m10 w3-container">
+                              <h4><p>Bo</p> <span class="w3-opacity w3-medium">Mon Oct 28 2019 02:11:47 GMT+0300 (E. Africa Standard Time)</span></h4>
+                              <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+                            </div>
+                          </div>
+
+                    
+                    </div>
+                    
+                    <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides1");
+                        for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 2500);    
+                    }
+                    </script>
+                    
+            
+            
+            
+            
+            
+             
+              
+                 
+                 
          
-             <div class="w3-row">
-               <div class="w3-col m2 text-center">
-                 <img class="w3-circle" src="uploads\2019\10\img_avatar1.png" style="width:96px;height:96px">
-               </div>
-               <div class="w3-col m10 w3-container">
-                 <h4>Bo <span class="w3-opacity w3-medium">Sep 28, 2014, 10:15 PM</span></h4>
-                 <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
-               </div>
-             </div>
+            
            </div>
+
+           </form>
+           
+          
+            
          
         
 
