@@ -3983,10 +3983,10 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                                
                                <table style="background-color: #022506;" class=" ">
                                        <tr>
-                                         <th>   ,,,BINGWA SAFARIS LTD is a tour company which has a Swahili name meaning winner or champion,,,,                                                                                                                             
+                                         <th>   BINGWA SAFARIS LTD is a tour company which has a Swahili name meaning winner or champion                                                                                                                             
 
                                                 <br>  
-                                                BINGWA SAFARIS LTD is a registered tour company under the Kenyan constitution companies act .2015, where you can't hesitate booking with us and experience our services,, and in all our safaris we use 4*4 vehicles in order to get the best moments in the fields,,,
+                                                BINGWA SAFARIS LTD is a registered tour company under the Kenyan constitution companies act .2015, where you can't hesitate booking with us and experience our services,, and in all our safaris we use 4*4 vehicles in order to get the best moments in the fields.
                                             
                                             
                                          </th>
@@ -3999,8 +3999,8 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                                        
                                </table>
                                <table class=" ">
-                                    <br>,,,we have come up with a package for the locals,,
-                                    MERU NATIONAL PARK ,,,
+                                    <br>we have come up with a package for the locals,,
+                                    MERU NATIONAL PARK 
                                     <br>
                        
                                     <tr>
@@ -4051,7 +4051,7 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                                     </tr>
                                     <tr>
                                       <td style="color: #222222; background-color: #cdd4ce; ">
-                                            <strong>9</strong> ,, children below 3 years is free,,, but this package applies to those in MERU TOWN and MAUA TOWN,,
+                                            <strong>9</strong>  children below 3 years is free, but this package applies to those in MERU TOWN and MAUA TOWN.
                                       </td>
                                      
                                     </tr> 
@@ -4059,7 +4059,7 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                                </table>
 
                                <p style="font-style: oblique;">
-                                    And we now have the option of LIPA POLE POLE FOR YOUR TRIP ,,, this are daily trips
+                                    And we now have the option of LIPA POLE POLE FOR YOUR TRIP, this are daily trips
                                </p>
 
                        </div>
@@ -4300,10 +4300,23 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
      
 
            <hr>
-           <form name="myForm" action="demo_form.asp" onsubmit="return myFunction()" method="post">
+          
+           
+        
+           
+           
+
+             
+
+             
+
+
+
 
            <div  style="padding: 50px;" class="w3-container">
-             <h5 style="color: #020202;">Recent Comments</h5>
+             <h5 style="color: #020202;">Reviews</h5>
+
+
 
 
                    <div class="w3-content w3-section" style="">
@@ -4322,17 +4335,40 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                                 </div>
                               </div>
 
+                            <div class="w3-row mySlides1 w3-animate-left">
 
-                    <div class="w3-row mySlides1 w3-animate-left" >
-                            <div class="w3-col m2 text-center">
-                              <img class="w3-circle" src="uploads\2019\10\img_avatar3.png" style="width:96px;height:96px">
-                            </div>
-                            <div class="w3-col m10 w3-container">
-                              <h4><p>John</p> <span class="w3-opacity w3-medium">Tu Nov 12 2019 10:16:41 GMT+0300 (E. Africa Standard Time)</span></h4>
-                              <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
-                            </div>
-                          </div>
+                              <div class="w3-col m2 text-center">
+                                <img id="myImg1" class="w3-circle"  style="width:96px;height:96px">
+                              </div>
+                              <div id="reviews1" class="w3-col m10 w3-container">
+                                  
+                    
+                               <h4><p  id="democomment11"></p> <span id="demotime1" class="w3-opacity w3-medium"></span></h4>
+                    
+                    
+                                <p id="democomment12"></p><br>
+                              </div>
 
+                            </div>
+
+
+                            <script>
+                                    var text = '{"clients":[' +
+                                               '{"src":"uploads/2019/10/img_avatar3.png","name":"John","date":"We Nov 06 2019 10:16:41 GMT+0300 (E. Africa Standard Time)","comment":"Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },' +
+                                               '{"src":"uploads/2019/10/img_avatar3.png","name":"Ann","date":"Tu Nov 12 2019 10:16:41 GMT+0300 (E. Africa Standard Time)","comment":"Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },' +
+                                               '{"src":"uploads/2019/10/img_avatar3.png","name":"Peter","date":"Tu Nov 12 2019 10:16:41 GMT+0300 (E. Africa Standard Time)","comment":"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }]}';
+                       
+                                    obj = JSON.parse(text);
+                                    document.getElementById('myImg1').src= obj.clients[1].src;
+                                    document.getElementById("democomment11").innerHTML = obj.clients[1].name;
+                                    document.getElementById("demotime1").innerHTML = obj.clients[1].date;
+                                    document.getElementById("democomment12").innerHTML = obj.clients[1].comment;
+
+                                    document.getElementById('myImg').src= obj.clients[0].src;
+                                    document.getElementById("democomment1").innerHTML = obj.clients[0].name;
+                                    document.getElementById("demotime").innerHTML = obj.clients[0].date;
+                                    document.getElementById("democomment").innerHTML = obj.clients[0].comment;
+                                    </script>
 
 
                     <div class="w3-row mySlides1 w3-animate-left">
@@ -4378,7 +4414,7 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
             
            </div>
 
-           </form>
+          
            
           
             
