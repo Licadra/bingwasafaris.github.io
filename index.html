@@ -2,6 +2,145 @@
 <html>
 
 <head>
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <link rel="stylesheet" href="slide4.css">
+
+        <style>
+  
+                .jumbotron {
+                    background-color: #f4511e;
+                    color: #fff;
+                    padding: 100px 25px;
+                    font-family: Montserrat, sans-serif;
+                }
+                .container-fluid {
+                    padding: 60px 50px;
+                }
+                .bg-grey {
+                    background-color: #f6f6f6;
+                }
+                .logo-small {
+                    color: #f4511e;
+                    font-size: 50px;
+                }
+                .logo {
+                    color: #f4511e;
+                    font-size: 200px;
+                }
+                .thumbnail {
+                    padding: 0 0 15px 0;
+                    border: none;
+                    border-radius: 0;
+                }
+                .thumbnail img {
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 10px;
+                }
+                .carousel-control.right, .carousel-control.left {
+                    background-image: none;
+                    color: #1ef4f4;
+                }
+                .carousel-indicators li {
+                    border-color: #1ef4f4 !important;
+                }
+                .carousel-indicators li.active {
+                    background-color: #1ef4f4 !important;
+                }
+                .item h4 {
+                    font-size: 19px;
+                    line-height: 1.375em;
+                    font-weight: 400;
+                    font-style: italic;
+                    margin: 70px 0;
+                }
+                .item span {
+                    font-style: normal;
+                }
+                .panel {
+                    border: 1px solid #1ef4f4; 
+                    border-radius:0 !important;
+                    transition: box-shadow 0.5s;
+                }
+                .panel:hover {
+                    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+                }
+                .panel-footer .btn:hover {
+                    border: 1px solid #1ef4f4;
+                    background-color: #fff !important;
+                    color: #1ef4f4;
+                }
+                .panel-heading {
+                    color: #fff !important;
+                    background-color: #1ef4f4 !important;
+                    padding: 25px;
+                    border-bottom: 1px solid transparent;
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                }
+                .panel-footer {
+                    background-color: white !important;
+                }
+                .panel-footer h3 {
+                    font-size: 32px;
+                }
+                .panel-footer h4 {
+                    color: #aaa;
+                    font-size: 14px;
+                }
+                .panel-footer .btn {
+                    margin: 15px 0;
+                    background-color: #1ef4f4;
+                    color: #fff;
+                }
+               
+                .slideanim {visibility:hidden;}
+                .slide {
+                    animation-name: slide;
+                    -webkit-animation-name: slide;
+                    animation-duration: 1s;
+                    -webkit-animation-duration: 1s;
+                    visibility: visible;
+                }
+                @keyframes slide {
+                  0% {
+                    opacity: 0;
+                    -webkit-transform: translateY(70%);
+                  } 
+                  100% {
+                    opacity: 1;
+                    -webkit-transform: translateY(0%);
+                  }
+                }
+                @-webkit-keyframes slide {
+                  0% {
+                    opacity: 0;
+                    -webkit-transform: translateY(70%);
+                  } 
+                  100% {
+                    opacity: 1;
+                    -webkit-transform: translateY(0%);
+                  }
+                }
+                @media screen and (max-width: 768px) {
+                  .col-sm-4 {
+                    text-align: center;
+                    margin: 25px 0;
+                  }
+                  .btn-lg {
+                      width: 100%;
+                      margin-bottom: 35px;
+                  }
+                }
+                @media screen and (max-width: 480px) {
+                  .logo {
+                      font-size: 150px;
+                  }
+                }
+                </style>
 
 
 
@@ -15,6 +154,9 @@
             
             <meta charset="UTF-8">
             <link rel="profile" href="https://gmpg.org/xfn/11">
+
+
+
             
             <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
             <title>Bingwa Safaris – Miles &amp; Miles of Smiles</title>
@@ -841,6 +983,181 @@
                                                             border: 3px solid #555;
                                                         }
                                                         </style>
+                                                         <style>
+  
+                                                                .jumbotron {
+                                                                    background-color: #f4511e;
+                                                                    color: #fff;
+                                                                    padding: 100px 25px;
+                                                                    font-family: Montserrat, sans-serif;
+                                                                }
+                                                                .container-fluid {
+                                                                    padding: 60px 50px;
+                                                                }
+                                                                .bg-grey {
+                                                                    background-color: #f6f6f6;
+                                                                }
+                                                                .logo-small {
+                                                                    color: #f4511e;
+                                                                    font-size: 50px;
+                                                                }
+                                                                .logo {
+                                                                    color: #f4511e;
+                                                                    font-size: 200px;
+                                                                }
+                                                                .thumbnail {
+                                                                    padding: 0 0 15px 0;
+                                                                    border: none;
+                                                                    border-radius: 0;
+                                                                }
+                                                                .thumbnail img {
+                                                                    width: 100%;
+                                                                    height: 100%;
+                                                                    margin-bottom: 10px;
+                                                                }
+                                                                .carousel-control.right, .carousel-control.left {
+                                                                    background-image: none;
+                                                                    color: #1ef4f4;
+                                                                }
+                                                                .carousel-indicators li {
+                                                                    border-color: #1ef4f4;
+                                                                }
+                                                                .carousel-indicators li.active {
+                                                                    background-color:#1ef4f4;
+                                                                }
+                                                                .item h4 {
+                                                                    font-size: 19px;
+                                                                    line-height: 1.375em;
+                                                                    font-weight: 400;
+                                                                    font-style: italic;
+                                                                    margin: 70px 0;
+                                                                }
+                                                                .item span {
+                                                                    font-style: normal;
+                                                                }
+                                                                .panel {
+                                                                    border: 1px solid #f4511e; 
+                                                                    border-radius:0 !important;
+                                                                    transition: box-shadow 0.5s;
+                                                                }
+                                                                .panel:hover {
+                                                                    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+                                                                }
+                                                                .panel-footer .btn:hover {
+                                                                    border: 1px solid #f4511e;
+                                                                    background-color: #fff !important;
+                                                                    color: #f4511e;
+                                                                }
+                                                                .panel-heading {
+                                                                    color: #fff !important;
+                                                                    background-color: #f4511e !important;
+                                                                    padding: 25px;
+                                                                    border-bottom: 1px solid transparent;
+                                                                    border-top-left-radius: 0px;
+                                                                    border-top-right-radius: 0px;
+                                                                    border-bottom-left-radius: 0px;
+                                                                    border-bottom-right-radius: 0px;
+                                                                }
+                                                                .panel-footer {
+                                                                    background-color: white !important;
+                                                                }
+                                                                .panel-footer h3 {
+                                                                    font-size: 32px;
+                                                                }
+                                                                .panel-footer h4 {
+                                                                    color: #aaa;
+                                                                    font-size: 14px;
+                                                                }
+                                                                .panel-footer .btn {
+                                                                    margin: 15px 0;
+                                                                    background-color: #f4511e;
+                                                                    color: #fff;
+                                                                }
+                                                               
+                                                                .slideanim {visibility:hidden;}
+                                                                .slide {
+                                                                    animation-name: slide;
+                                                                    -webkit-animation-name: slide;
+                                                                    animation-duration: 1s;
+                                                                    -webkit-animation-duration: 1s;
+                                                                    visibility: visible;
+                                                                }
+                                                                @keyframes slide {
+                                                                  0% {
+                                                                    opacity: 0;
+                                                                    -webkit-transform: translateY(70%);
+                                                                  } 
+                                                                  100% {
+                                                                    opacity: 1;
+                                                                    -webkit-transform: translateY(0%);
+                                                                  }
+                                                                }
+                                                                @-webkit-keyframes slide {
+                                                                  0% {
+                                                                    opacity: 0;
+                                                                    -webkit-transform: translateY(70%);
+                                                                  } 
+                                                                  100% {
+                                                                    opacity: 1;
+                                                                    -webkit-transform: translateY(0%);
+                                                                  }
+                                                                }
+                                                                @media screen and (max-width: 768px) {
+                                                                  .col-sm-4 {
+                                                                    text-align: center;
+                                                                    margin: 25px 0;
+                                                                  }
+                                                                  .btn-lg {
+                                                                      width: 100%;
+                                                                      margin-bottom: 35px;
+                                                                  }
+                                                                }
+                                                                @media screen and (max-width: 480px) {
+                                                                  .logo {
+                                                                      font-size: 150px;
+                                                                  }
+                                                                }
+                                                                </style>
+                                                                <style>
+                                                                        .mySlides4 {display:none;}
+                                                                        </style>
+                                                                        
+                                                                        <style>
+                                                                        .carousel1 {
+  position: relative;
+}
+.slideanim1 {visibility:hidden;}
+  .slide1 {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide1 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide1 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+ 
+                                                                        </style>
+                                                              
+
 
 
         
@@ -3150,11 +3467,126 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+                                    <div class="qodef-row-grid-section-wrapper qodef-content-aligment-center">
+                           
+                                            <div class="qodef-row-grid-section">
                                    
-                
+                                     <div class="vc_row wpb_row vc_row-fluid">
+                                     
+
+                                    <div id="portfolio" class="" style="text-align: center; max-width: 1100px;">
+
+                                            <h2 style="background-color: #aaa;">Discover the famous <strong>Magadi Crater</strong></h2>
+                                            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                                                
+                                              <!-- Indicators -->
+                                              <ol class="carousel-indicators" style="color: #020202;">
+                                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                                <li data-target="#myCarousel" data-slide-to="4"></li>
+                                                <li data-target="#myCarousel" data-slide-to="5"></li>
+                                                <li data-target="#myCarousel" data-slide-to="6"></li>
+                                                <li data-target="#myCarousel" data-slide-to="7"></li>
+                                                <li data-target="#myCarousel" data-slide-to="8"></li>
+                                                <li data-target="#myCarousel" data-slide-to="9"></li>
+                                                <li data-target="#myCarousel" data-slide-to="10"></li>
+                                              </ol>
+
+                                               
+                                          
+                                              <!-- Wrapper for slides -->
+                                              <div class="carousel-inner" role="listbox" style="max-width: 100%;" >
+                                                <div class="item active">
+                                                    <img src="uploads\2019\9\IMG-20191206-WA0010.jpg" style="width:100%;max-height: 600px;">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="uploads\2019\9\IMG-20191206-WA0009.jpg" style="width:100%;max-height: 600px;">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="uploads\2019\9\IMG-20191206-WA0008.jpg" style="width:100%;max-height: 600px;">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="uploads\2019\9\IMG-20191206-WA0007.jpg" style="width:100%;max-height: 600px;">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="uploads\2019\9\IMG-20191206-WA0006.jpg" style="width:100%;max-height: 600px;">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="uploads\2019\9\IMG-20191206-WA0005.jpg" style="width:100%;max-height: 600px;">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="uploads\2019\9\IMG-20191206-WA0004.jpg" style="width:100%;max-height: 600px;">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="uploads\2019\9\IMG-20191206-WA0003.jpg" style="width:100%;max-height: 600px;">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="uploads\2019\9\IMG-20191206-WA0002.jpg" style="width:100%;max-height: 600px;">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="uploads\2019\9\IMG-20191206-WA0001.jpg" style="width:100%;max-height: 600px;">
+                                                </div>
+                                                <div class="item">
+                                                    <img src="uploads\2019\9\IMG-20191206-WA0000.jpg" style="width:100%;max-height: 600px;">
+                                                </div>
+
+
+                                                 <!-- Left and right controls -->
+                                                 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                        <span class="sr-only" style="color: #020202;">Previous</span>
+                                                      </a>
+                                                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                        <span class="sr-only" style="color: #020202;">Next</span>
+                                                      </a>
+                                              </div>
+                                          
+                                            
+                                            </div>
+
+
+                                    </div>
+                                     
+                                </div>
+                                            </div>
+
+                                    </div>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     
 
 
 
@@ -4261,28 +4693,7 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
             
              
              <script>
-             function myFunction() {
-                 var x, text;
-             
-                 // Get the value of the input field with id="numb"
-                 
-                 x = document.getElementById("comment").value;
-                 x1 = document.getElementById("comment1").value;
-                 var y = document.getElementById("comment1").value;
-                    if (y == null || y == "") {
-                  alert("Name must be filled out");
-                 return false;
-                }
-
-             
-                 
-                 document.getElementById("democomment").innerHTML = x;
-                 document.getElementById("democomment1").innerHTML = x1;
-                 document.getElementById("demotime").innerHTML = Date();
-                 document.getElementById('myImg').src='uploads/2019/10/img_avatar3.png'
-               
             
-             }
             
              </script>
              
@@ -4353,21 +4764,45 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
 
 
                             <script>
-                                    var text = '{"clients":[' +
+                                 function myFunction() {
+                                var x, text;
+             
+                                // Get the value of the input field with id="numb"
+                 
+                                x = document.getElementById("comment").value;
+                                x1 = document.getElementById("comment1").value;
+                                var y = document.getElementById("comment1").value;
+                                if (y == null || y == "") {
+                                alert("Name must be filled out");
+                                return false;
+                                }
+
+                                clients[3].src = 'uploads/2019/10/img_avatar3.png';
+                                clients[3].name = x;
+                                clients[3].comment = x1;
+                                clients[3].date = Date();
+                            }
+              
+            
+            
+                                    var text1 = '{"clients":[' +
                                                '{"src":"uploads/2019/10/img_avatar3.png","name":"John","date":"We Nov 06 2019 10:16:41 GMT+0300 (E. Africa Standard Time)","comment":"Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },' +
                                                '{"src":"uploads/2019/10/img_avatar3.png","name":"Ann","date":"Tu Nov 12 2019 10:16:41 GMT+0300 (E. Africa Standard Time)","comment":"Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },' +
                                                '{"src":"uploads/2019/10/img_avatar3.png","name":"Peter","date":"Tu Nov 12 2019 10:16:41 GMT+0300 (E. Africa Standard Time)","comment":"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }]}';
                        
-                                    obj = JSON.parse(text);
+                                    obj = JSON.parse(text1);
                                     document.getElementById('myImg1').src= obj.clients[1].src;
                                     document.getElementById("democomment11").innerHTML = obj.clients[1].name;
                                     document.getElementById("demotime1").innerHTML = obj.clients[1].date;
                                     document.getElementById("democomment12").innerHTML = obj.clients[1].comment;
 
-                                    document.getElementById('myImg').src= obj.clients[0].src;
-                                    document.getElementById("democomment1").innerHTML = obj.clients[0].name;
-                                    document.getElementById("demotime").innerHTML = obj.clients[0].date;
-                                    document.getElementById("democomment").innerHTML = obj.clients[0].comment;
+                                    document.getElementById('myImg').src= obj.clients[3].src;
+                                    
+                                    document.getElementById("democomment1").innerHTML = obj.clients[3].name;
+                                    document.getElementById("demotime").innerHTML = obj.clients[3].date;
+                                    document.getElementById("democomment").innerHTML = obj.clients[3].comment;
+                               
+
                                     </script>
 
 
