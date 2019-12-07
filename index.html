@@ -3478,16 +3478,15 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
 
 
 
-                                    <div class="qodef-row-grid-section-wrapper qodef-content-aligment-center">
+                            <div class=" qodef-content-aligment-center">
                            
-                                            <div class="qodef-row-grid-section">
+                                <div class=" ">
                                    
-                                     <div class="vc_row wpb_row vc_row-fluid">
-                                     
+                                    <div class="">                                     
 
-                                    <div id="portfolio" class="" style="text-align: center; max-width: 1100px;">
+                                      <div id="portfolio" class="" style="text-align: center; ">
 
-                                            <h2 style="background-color: #aaa;">Discover the famous <strong>Magadi Crater</strong></h2>
+                                            <h2 style="background-color: #aaa;">Discover the famous <strong>Magado Crater</strong></h2>
                                             <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
                                                 
                                               <!-- Indicators -->
@@ -3559,12 +3558,13 @@ Bingwa<strong style="color: rgb(126, 247, 6);">Safaris</strong>
                                             </div>
 
 
-                                    </div>
+                                      </div>
                                      
-                                </div>
-                                            </div>
-
                                     </div>
+                                         
+                                </div>
+                                   
+                            </div>
 
 
 
@@ -4746,6 +4746,10 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                                 </div>
                               </div>
 
+
+
+
+
                             <div class="w3-row mySlides1 w3-animate-left">
 
                               <div class="w3-col m2 text-center">
@@ -4763,6 +4767,11 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                             </div>
 
 
+
+
+
+
+
                             <script>
                                  function myFunction() {
                                 var x, text;
@@ -4777,10 +4786,17 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                                 return false;
                                 }
 
-                                clients[3].src = 'uploads/2019/10/img_avatar3.png';
-                                clients[3].name = x;
-                                clients[3].comment = x1;
-                                clients[3].date = Date();
+
+                                    document.getElementById('myImg').src= 'uploads/2019/10/img_avatar3.png';
+                                    document.getElementById("democomment1").innerHTML = x1 ;
+                                    document.getElementById("demotime").innerHTML = Date();
+                                    document.getElementById("democomment").innerHTML = x;
+
+
+                               
+                               
+                               
+                                
                             }
               
             
@@ -4791,19 +4807,23 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                                                '{"src":"uploads/2019/10/img_avatar3.png","name":"Peter","date":"Tu Nov 12 2019 10:16:41 GMT+0300 (E. Africa Standard Time)","comment":"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }]}';
                        
                                     obj = JSON.parse(text1);
+
                                     document.getElementById('myImg1').src= obj.clients[1].src;
                                     document.getElementById("democomment11").innerHTML = obj.clients[1].name;
                                     document.getElementById("demotime1").innerHTML = obj.clients[1].date;
                                     document.getElementById("democomment12").innerHTML = obj.clients[1].comment;
 
-                                    document.getElementById('myImg').src= obj.clients[3].src;
-                                    
+
+
+                                    document.getElementById('myImg').src= obj.clients[3].src;                                    
                                     document.getElementById("democomment1").innerHTML = obj.clients[3].name;
                                     document.getElementById("demotime").innerHTML = obj.clients[3].date;
                                     document.getElementById("democomment").innerHTML = obj.clients[3].comment;
                                
 
                                     </script>
+
+
 
 
                     <div class="w3-row mySlides1 w3-animate-left">
@@ -4815,6 +4835,9 @@ Kenya has a wealth of breathtaking sites to view. Plan your vacations with us as
                               <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
                             </div>
                           </div>
+
+
+
 
                     
                     </div>
