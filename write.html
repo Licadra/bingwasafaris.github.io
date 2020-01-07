@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Object from JSON String</h2>
+
+<p id="demo1"></p>
+
+<script>
+var text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+obj = JSON.parse(text);
+document.getElementById("demo1").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+
+
+<form id="frm1" action="http://desktop-l7g6702:8000/customers.php">
+    First name: <input type="text" name="fname" value="Donald"><br>
+    Last name: <input type="text" name="lname" value="Duck"><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+  
+  <p>Click "Try it" to display the value of each element in the form.</p>
+  
+  <button onclick="myFunction()">Try it</button>
+  
+  <p id="demo"></p>
+  
+  <script>
+  function myFunction() {
+      var x = document.getElementById("frm1");
+      var text = "";
+      var i;
+      for (i = 0; i < x.length ;i++) {
+          text += x.elements[i].value + "<br>";
+      }
+      document.getElementById("demo").innerHTML = text;
+  }
+  </script>
+
+
+
+
+  
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/js/tryit.asp?filename=tryjs_json_parse by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Jul 2016 01:49:42 GMT -->
+</html>
